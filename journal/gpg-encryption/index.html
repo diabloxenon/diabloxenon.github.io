@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>diabloxenon/journal/gpg-encryption/</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/bundle.min.194e69a1c3f1adac8218a0e7f2f02f2bd0b4b6a07d71d15480ecf9c6d8db07d190e81a15faaf5aaa87dc5ac70fecf9023fad8b5bd8f0b71dd1eaad760ae9785b.css" integrity="sha512-GU5pocPxrayCGKDn8vAvK9C0tqB9cdFUgOz5xtjbB9GQ6BoV+q9aqofcWscP7PkCP62LW9jwtx3R6q12Cul4Ww=="> 
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+       <meta property="og:title" content="All about GPG Encryption" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://nmnx.org/journal/gpg-encryption/" /><meta property="article:published_time" content="2020-10-29T00:00:00+00:00" />
+
+
+
+<meta name="twitter:title" content="All about GPG Encryption"/>
+<meta name="twitter:description" content="This is the (Part 2) of All about GPG series. In this part, we will learn how to encrypt stuff with GNU Privacy Guard. After reading this guide, you will be able to encrypt/decrypt files and securely transfer your files to it.
+"/>
+
+</head>
+
+<body class="xeno">
+    <div class="container">
+        <div class="xeno-nav">
+            <header class="xeno-logo">
+                <div class="logo xeno-prompt">
+                     
+                    <a href="http://nmnx.org/" class="no-style site-name">diabloxenon</a>:~# /<a href='http://nmnx.org/journal'>journal</a>/<a href='http://nmnx.org/journal/gpg-encryption'>gpg-encryption</a>/
+                </div>
+            </header>
+            <nav class="xeno-menu">
+                <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                    <div class="nav">
+                        
+                        <li><a href="http://nmnx.org/awards" typeof="ListItem">/awards</a></li>
+                        
+                        <li><a href="http://nmnx.org/journal" typeof="ListItem">/journal</a></li>
+                        
+                        <li><a href="http://nmnx.org/dev" typeof="ListItem">/dev</a></li>
+                        
+                        <li><a href="http://nmnx.org/tags" typeof="ListItem">/tags</a></li>
+                        
+                    </div>
+                    <div class="social">
+                        
+                        <li><a href="https://t.me/diabloxenon" typeof="ListItem" target="_blank" rel="nofollow noreferrer"><span class="icon"></span></a></li>
+                        
+                        <li><a href="https://github.com/diabloxenon" typeof="ListItem" target="_blank" rel="nofollow noreferrer"><span class="icon"></span></a></li>
+                        
+                        <li><a href="https://twitter.com/diabloxenon" typeof="ListItem" target="_blank" rel="nofollow noreferrer"><span class="icon"></span></a></li>
+                        
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        
+<h1>All about GPG Encryption</h1>
+<div class="title">
+    <div class="date">
+        Oct. 29, 2020
+    </div>
+    <ul class="tags">
+        
+        <li>
+            <a href="http://nmnx.org/tags/noobs/">
+                <div class="tagid">
+                    Noobs
+                </div>
+            </a>
+        </li>
+        
+        <li>
+            <a href="http://nmnx.org/tags/privacy/">
+                <div class="tagid">
+                    Privacy
+                </div>
+            </a>
+        </li>
+        
+        <li>
+            <a href="http://nmnx.org/tags/gpg/">
+                <div class="tagid">
+                    GPG
+                </div>
+            </a>
+        </li>
+        
+    </ul>
+</div>
+<br /><p>This is the (Part 2) of All about GPG series. In this part, we will learn how to encrypt stuff with GNU Privacy Guard. After reading this guide, you will be able to encrypt/decrypt files and securely transfer your files to it.
+<br/></p>
+
+<h2 id="case-2-encryption">Case 2: Encryption</h2>
+
+<p>Firstly, we will generate ourselves an ultimate signing key. Before this, you might want to refer to earlier <a href="/journal/all-about-gpg">part here</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">Please <span class="k">select</span> what kind of key you want:
+   <span class="o">(</span>1<span class="o">)</span> RSA and RSA <span class="o">(</span>default<span class="o">)</span>
+   <span class="o">(</span>2<span class="o">)</span> DSA and Elgamal
+   <span class="o">(</span>3<span class="o">)</span> DSA <span class="o">(</span>sign only<span class="o">)</span>
+   <span class="o">(</span>4<span class="o">)</span> RSA <span class="o">(</span>sign only<span class="o">)</span>
+   <span class="o">(</span>7<span class="o">)</span> DSA <span class="o">(</span><span class="nb">set</span> your own capabilities<span class="o">)</span>
+   <span class="o">(</span>8<span class="o">)</span> RSA <span class="o">(</span><span class="nb">set</span> your own capabilities<span class="o">)</span>
+   <span class="o">(</span>9<span class="o">)</span> ECC and ECC
+  <span class="o">(</span>10<span class="o">)</span> ECC <span class="o">(</span>sign only<span class="o">)</span>
+  <span class="o">(</span>11<span class="o">)</span> ECC <span class="o">(</span><span class="nb">set</span> your own capabilities<span class="o">)</span>
+  <span class="o">(</span>13<span class="o">)</span> Existing key
+Your selection? <span class="m">10</span></code></pre></div>
+<p>Select <em>Option 10</em> from the menu by entering its number, it will show us another screen to select options</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">Please <span class="k">select</span> which elliptic curve you want:
+   <span class="o">(</span>1<span class="o">)</span> Curve <span class="m">25519</span>
+   <span class="o">(</span>3<span class="o">)</span> NIST P-256
+   <span class="o">(</span>4<span class="o">)</span> NIST P-384
+   <span class="o">(</span>5<span class="o">)</span> NIST P-521
+   <span class="o">(</span>6<span class="o">)</span> Brainpool P-256
+   <span class="o">(</span>7<span class="o">)</span> Brainpool P-384
+   <span class="o">(</span>8<span class="o">)</span> Brainpool P-512
+   <span class="o">(</span>9<span class="o">)</span> secp256k1
+Your selection? <span class="m">1</span></code></pre></div>
+<p>For this scenario, unless you are an absolute expert which most of us don&rsquo;t, I recommend you to visit <a href="http://safecurves.cr.yp.to/" rel="nofollow noreferrer" target="_blank">http://safecurves.cr.yp.to/</a> that will help you in explaining which elliptic curve is cryptographically more secure or not. By the time of writing this entry, Curve 25519 is more trustworthy than others, so we will select <em>Option 1</em>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">Please specify how long the key should be valid.
+         0 = key does not expire
+      &lt;n&gt;  = key expires in n days
+      &lt;n&gt;w = key expires in n weeks
+      &lt;n&gt;m = key expires in n months
+      &lt;n&gt;y = key expires in n years
+Key is valid for? (0) 2y</code></pre></div>
+<p>Now generally, since the algorithm we selected is secure in long term, we shall set this to <em>2y</em> to sign things for 2 years. However, if you are planning on selecting for more years, you can also do it by renewing the expired key.</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">Key expires at Fri Oct 23 02:41:02 2022 GMT
+Is this correct? (y/N)</code></pre></div>
+<p>Now you will be greeted by a confirmation screen with the expiration date and its time, for your reference. Confirm it by entering <em>y</em>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">GnuPG needs to construct a user ID to identify your key.
+
+Real name: Xenon Lucifer Diablo
+Email address: code@nmnx.org
+Comment: Signing key for open source projects and R&amp;D purposes only.</code></pre></div>
+<p>This time you will be asked for your information (Name, Email and Comment) to generate the key with your corresponding email address.
+A comment corresponds to its purpose, so write why do you want to use this key.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">Change <span class="o">(</span>N<span class="o">)</span>ame, <span class="o">(</span>C<span class="o">)</span>omment, <span class="o">(</span>E<span class="o">)</span>mail or <span class="o">(</span>O<span class="o">)</span>kay/<span class="o">(</span>Q<span class="o">)</span>uit? </code></pre></div>
+<p>For the final time, it will ask you for any changes (in case of typos). Choose <em>(O)kay</em> for proceeding further.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">            ┌──────────────────────────────────────────────────────┐            
+            │ Please enter the passphrase to                       │            
+            │ protect your new key                                 │            
+            │                                                      │            
+            │ Passphrase: ________________________________________ │            
+            │                                                      │            
+            │       &lt;OK&gt;                              &lt;Cancel&gt;     │            
+            └──────────────────────────────────────────────────────┘            </code></pre></div>
+<p>Your choosen pinentry interface will now ask for your new password. Enter the password to safeguard your keys and then press <em>tab</em> to <code>&lt;OK&gt;</code> and press <em>return</em>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.</code></pre></div>
+<p>This message screen will appear where you have to <em>press tons of buttons</em> on your keyboard randomly and <em>shake your mouse</em> like hell! Not doing so will lead you to this message.</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">generator a better chance to gain enough entropy.
+Not enough random bytes available. Please do some other work to give the OS a chance to collect more entropy! (Need 281 more bytes)</code></pre></div>
+<p>This means that your system hasn&rsquo;t achieved the required threshold of entropy. An impromptu explaination is provided in <a href="/journal/when-to-use-rng">this entry</a>.</p>
+
+<p>If all went well, then you will be greeted by the following text.</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">gpg: key 033A0E83209937B3 marked as ultimately trusted
+gpg: revocation certificate stored as &#39;xxx/xxx/xxx/xxx.rev&#39;
+public and secret key created and signed.
+
+pub   ed25519 2020-10-23 [SC] [expires: 2022-10-23]
+      ABCDEF0123456789ABCDEF0123456789ABCDEF01
+uid                      Xenon Lucifer Diablo (Signing key for open source projects and R&amp;D purposes only.) &lt;code@nmnx.org&gt;</code></pre></div>
+<p>Congratulations! You have successfully generated your signing key. To verify and see your key,</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">gpg --list-secret-keys --keyid-format LONG --fingerprint</code></pre></div>
+<p>Now export your key using the command</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">gpg --export --armor 033A0E83209937B3</code></pre></div>
+<p>Here, you can see my public key ready to export</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEX7qsvBYJKwYBBAHaRw8BAQdAVtScTWmCqpQUPFgwI+Ajtaxh1fGXAlTX+uq8
+iU0UZI60Ylhlbm9uIEx1Y2lmZXIgRGlhYmxvIChTaWduaW5nIGtleSBmb3Igb3Bl
+biBzb3VyY2UgcHJvamVjdHMgYW5kIFImRCBwdXJwb3NlcyBvbmx5LikgPGNvZGVA
+bm1ueC5vcmc+iJYEExYIAD4WIQSBXvtaJomyOdMJyiEDOg6DIJk3swUCX7qsvAIb
+AwUJA8JnAAULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRADOg6DIJk3s41NAPoD
+WhPkhqeuUwZjHhc/5YZeV3EmiSKP9yges/+iWUqeSgD9FaSyLGahqbJa8Cdtp+fY
+jKu3b7TD2PKi33jLrEBKug8=
+=HcnM
+-----END PGP PUBLIC KEY BLOCK-----</code></pre></div>
+<p>You can verify the key by checking onto my commits of my projects at github.</p>
+
+<h3 id="signing-things">Signing things</h3>
+
+<p>This part is ded simple, we will sign the files and documents using this simple command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">gpg --sign --default-key code@nmnx.org thelegend27.pdf</code></pre></div>
+<p>where <code>code@nmnx.org</code> is your email address mentioned earlier in generated signing key (if you have multiple keys in your system) whereas <code>thelegend27.pdf</code> is the file name (👀 don&rsquo;t tell anyone). Again this screen will appear before you, just enter your password:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">            ┌──────────────────────────────────────────────────────┐            
+            │ Please enter the passphrase to                       │            
+            │ protect your new key                                 │            
+            │                                                      │            
+            │ Passphrase: ________________________________________ │            
+            │                                                      │            
+            │       &lt;OK&gt;                              &lt;Cancel&gt;     │            
+            └──────────────────────────────────────────────────────┘            </code></pre></div>
+<p>This will create a signed document ending with extension *.gpg in your working directory which can be verified and decrypted back to original document.</p>
+
+<h3 id="verifying-things">Verifying things</h3>
+
+<p>Again, simple as shit. Just use:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">gpg --verify thelegend27.pdf.gpg</code></pre></div>
+<p>and this will do the job! However there are few caveats, that I would like to mention before. <em>Always check the signing comment before decryption</em>. That will allow you to verify the authenticity of the issued document.</p>
+
+<h3 id="retrieving-the-original">Retrieving the original</h3>
+
+<p>Once verified carefully, decrypt the document you have received using the command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">gpg --output topsecret.pdf --decrypt thelegend27.pdf.gpg</code></pre></div>
+<p>And you shall receive! The document you yearned for soo long. Ahh the joy! 😌</p>
+
+<p>Since this entry&rsquo;s size is large, I have decided to introduce several parts to this <a href="/tags/gpg">series</a>.</p>
+
+<p>That&rsquo;s all for today! Thank you for reading this crap. Let&rsquo;s see you again next time.</p>   <div class="footer">
+    <ul class="links">
+        <div class="copy">
+            echo (C) 2021&nbsp;<a href="https://naman.rocks" target="_blank" rel="nofollow noreferrer">Naman Bishnoi</a>&nbsp;| cat &nbsp;
+        </div>
+        <li><a href="mailto:me@nmnx.org" target="_blank" rel="nofollow noreferrer">me@nmnx.org</a></li>
+        <li><a href="/about">/about</a></li>
+        <li><a href="/donate">/donate</a></li>
+        <li><a href="/credits">/credits</a></li>
+        <li><a href="/privacy">/privacy</a></li>
+        <li><a href="/pgp">/pgp</a></li>
+        <li><a href="#">/top</a></li>
+        <li>
+            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="nofollow noreferrer"><img alt="Creative Commons Licence" style="border-width:0;width:88px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+<script>
+    console.log("Yeah yeah whatevs, just check the code!");
+</script>
+    </div>
+</body>
+
+</html>

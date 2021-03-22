@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science and Deep Learning on diabloxenon</title>
+    <link>http://nmnx.org/ai/</link>
+    <description>Recent content in Data Science and Deep Learning on diabloxenon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 07 Mar 2021 12:17:55 +0530</lastBuildDate><atom:link href="http://nmnx.org/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basic Neural Network</title>
+      <link>http://nmnx.org/ai/basic-nn/</link>
+      <pubDate>Sun, 07 Mar 2021 12:17:55 +0530</pubDate>
+      
+      <guid>http://nmnx.org/ai/basic-nn/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

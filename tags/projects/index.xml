@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on diabloxenon</title>
+    <link>http://nmnx.org/tags/projects/</link>
+    <description>Recent content in Projects on diabloxenon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 Jan 2014 19:20:10 +0530</lastBuildDate><atom:link href="http://nmnx.org/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coldlock Matrix 2.0</title>
+      <link>http://nmnx.org/dev/coldlock/</link>
+      <pubDate>Tue, 14 Jan 2014 19:20:10 +0530</pubDate>
+      
+      <guid>http://nmnx.org/dev/coldlock/</guid>
+      <description>&lt;p&gt;Created this project to try out the application of thermoelectric cooling and Peltier effect.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

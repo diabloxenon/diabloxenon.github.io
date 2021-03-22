@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPG on diabloxenon</title>
+    <link>http://nmnx.org/tags/gpg/</link>
+    <description>Recent content in GPG on diabloxenon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://nmnx.org/tags/gpg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All about GPG Encryption</title>
+      <link>http://nmnx.org/journal/gpg-encryption/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/gpg-encryption/</guid>
+      <description>&lt;p&gt;This is the (Part 2) of All about GPG series. In this part, we will learn how to encrypt stuff with GNU Privacy Guard. After reading this guide, you will be able to encrypt/decrypt files and securely transfer your files to it.
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>All about GPG Signing</title>
+      <link>http://nmnx.org/journal/gpg-signing/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/gpg-signing/</guid>
+      <description>&lt;p&gt;This is the (Part 1) of All about GPG series. In this part, we will learn how to sign stuff with GNU Privacy Guard. After reading this guide, you will be able to digitally sign files and distribute your code with your assurance.
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>All about GPG</title>
+      <link>http://nmnx.org/journal/about-gpg/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/about-gpg/</guid>
+      <description>&lt;nav&gt;
+&lt;/nav&gt;
+
+&lt;p&gt;One guide to rule GPG all! In this noob friendly guide, we will learn how to generate, use and sign stuff with GNU Privacy Guard. After reading this guide, your private life will be much more private than ever.
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

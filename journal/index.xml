@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Journal on diabloxenon</title>
+    <link>http://nmnx.org/journal/</link>
+    <description>Recent content in My Journal on diabloxenon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://nmnx.org/journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Just random things</title>
+      <link>http://nmnx.org/journal/just-random-things/</link>
+      <pubDate>Sun, 15 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/just-random-things/</guid>
+      <description>&lt;p&gt;Random things aren&amp;rsquo;t random at all. Sometimes, it might be difficult for your beloved PC to generate a proper entropy for things that needs to be random. We will explore the solution behind this peculiar problem.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A good way to wipe disks off</title>
+      <link>http://nmnx.org/journal/wipe-disks/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/wipe-disks/</guid>
+      <description>&lt;p&gt;Hi again, today in this NOOB friendly Privacy series of my journal, I will be discussing a good, trusted way to wipe disks off. Including your precious SSD or that god awful HDD from your grandma&amp;rsquo;s PC which you wanna sell on ebay for couple of bucks. This is must.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>All about GPG Encryption</title>
+      <link>http://nmnx.org/journal/gpg-encryption/</link>
+      <pubDate>Thu, 29 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/gpg-encryption/</guid>
+      <description>&lt;p&gt;This is the (Part 2) of All about GPG series. In this part, we will learn how to encrypt stuff with GNU Privacy Guard. After reading this guide, you will be able to encrypt/decrypt files and securely transfer your files to it.
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>All about GPG Signing</title>
+      <link>http://nmnx.org/journal/gpg-signing/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/gpg-signing/</guid>
+      <description>&lt;p&gt;This is the (Part 1) of All about GPG series. In this part, we will learn how to sign stuff with GNU Privacy Guard. After reading this guide, you will be able to digitally sign files and distribute your code with your assurance.
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>All about GPG</title>
+      <link>http://nmnx.org/journal/about-gpg/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/about-gpg/</guid>
+      <description>&lt;nav&gt;
+&lt;/nav&gt;
+
+&lt;p&gt;One guide to rule GPG all! In this noob friendly guide, we will learn how to generate, use and sign stuff with GNU Privacy Guard. After reading this guide, your private life will be much more private than ever.
+&lt;br/&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>interdimensional internet</title>
+      <link>http://nmnx.org/journal/interdim-internet/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/interdim-internet/</guid>
+      <description>&lt;p&gt;The web based challenges are back to make you cry and this time Rick and Morty are drunk af to remember anything that would help you. Read my method of how I solved the challenge and read only if you already have obtained the flag.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Day one</title>
+      <link>http://nmnx.org/journal/intro/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://nmnx.org/journal/intro/</guid>
+      <description>&lt;p&gt;A journal has been born&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
