@@ -11,4 +11,4 @@ If you want to save it **offline** for any purposes:
 
 This will spawn a basic http server enough for reading the journal properly.
 
-That's all folks! Your support matters a lot to me and is greatly appreciated.
+That's all folks! Your support matters a lot to me and is greatly appreciated. This journal works on donations completely, so I would really appreciate if you could spare some change for this and help a brother out. Donation link here https://nmnx.org/donate
