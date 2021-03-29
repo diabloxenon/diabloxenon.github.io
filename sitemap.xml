@@ -5,14 +5,49 @@
         
         <url>
             <loc>http://nmnx.org/dev/</loc>
-            <lastmod>2021-03-22T19:21:24+05:30</lastmod>
+            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
         </url>
         
     
         
         <url>
             <loc>http://nmnx.org/</loc>
-            <lastmod>2021-03-22T19:21:24+05:30</lastmod>
+            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://nmnx.org/tags/opencl/</loc>
+            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://nmnx.org/dev/opencl/</loc>
+            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://nmnx.org/tags/rust/</loc>
+            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://nmnx.org/tags/software/</loc>
+            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://nmnx.org/tags/</loc>
+            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
         </url>
         
     
@@ -26,27 +61,6 @@
         
         <url>
             <loc>http://nmnx.org/tags/python/</loc>
-            <lastmod>2021-03-22T19:21:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/rust/</loc>
-            <lastmod>2021-03-22T19:21:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/</loc>
-            <lastmod>2021-03-22T19:21:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/tools/</loc>
             <lastmod>2021-03-22T19:21:24+05:30</lastmod>
         </url>
         
@@ -188,6 +202,13 @@
         <url>
             <loc>http://nmnx.org/privacy/</loc>
             <lastmod>2020-09-05T21:05:33+05:30</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://nmnx.org/journal/wwdc2020/</loc>
+            <lastmod>2019-07-01T00:00:00+00:00</lastmod>
         </url>
         
     
