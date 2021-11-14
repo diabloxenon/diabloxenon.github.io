@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>XLD&#x27;s Journal - Spam</title>
+	<link href="https://nmnx.org/tags/spam/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nmnx.org"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-04-05T00:00:00+00:00</updated>
+	<id>https://nmnx.org/tags/spam/atom.xml</id>
+	<entry xml:lang="en">
+		<title>iPhone Calendar Spam</title>
+		<published>2021-04-05T00:00:00+00:00</published>
+		<updated>2021-04-05T00:00:00+00:00</updated>
+		<link href="https://nmnx.org/journal/calendar-spam/" type="text/html"/>
+		<id>https://nmnx.org/journal/calendar-spam/</id>
+		<content type="html">&lt;p&gt;With the evolution of technology, scammers are hooking their pea sized brains up to the cloud to discover new possiblities of spamming people. Here am I, presenting what to do if you are one of those unlucky guy&#x2F;gal out there.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Annoying thing is these scammers don&#x27;t take shame in their crafty new tricks to fool the technologically illiterate people.&lt;&#x2F;p&gt;
+&lt;p&gt;Our victim today was a friend of mine, who uses smartphones like shit 💩. Bear with me, he is the same age as of me bit on the older side tho. So anyways, he showed me his phone saying that he is receiving strange notifications on his phone, almost like its hacked or something. That&#x27;s when I saw this hideous contraption and I can&#x27;t even express my disgust to even call this a hack. That&#x27;s like insulting the art of hacking in itself.&lt;&#x2F;p&gt;
+&lt;p&gt;In short, this was a malicious adware but so crafty that you average joe might consider it a virus or something. A good social engineering effort tho.&lt;&#x2F;p&gt;
+&lt;p&gt;Knowing the victim&#x27;s activities, the payload mentioned here found its way into his device by opening an attachment thinking about a Zoom meeting link but actually the file was of extension .ical.&lt;&#x2F;p&gt;
+&lt;p&gt;That executed the payload inside his phone as an iCalendar account which resolved my question of how the notifications are updating themselves everyday. This was really simple, as the iCalendar account &lt;strong&gt;was actually an API&lt;&#x2F;strong&gt; from which the notifications were fetching into the victim&#x27;s device.&lt;&#x2F;p&gt;
+&lt;p&gt;Simple deletion of the malicious account resolved the problem. &lt;&#x2F;p&gt;
+&lt;p&gt;If anyone of you are suffering from the same thing, just go to &lt;code&gt;iOS Settings &amp;gt; Calendar &amp;gt; Accounts &amp;gt; [THE MALICIOUS ACCOUNT] &amp;gt; Delete Account&lt;&#x2F;code&gt;. You can find the &lt;strong&gt;API link&lt;&#x2F;strong&gt; in &lt;code&gt;Account &amp;gt; Server&lt;&#x2F;code&gt;, just copy the link and paste it into your finding repo. &lt;&#x2F;p&gt;
+&lt;p&gt;Also, please do share your findings with me too, coz I love torturing scammers :smiling_face_with_horns: and for any buddy here who wants to do some analysis over this, here&#x27;s the bone!&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;txt&quot; class=&quot;language-txt z-code&quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;http:&#x2F;&#x2F;msgle.com&#x2F;api&#x2F;v1&#x2F;subscriber&#x2F;fd6b26f1-a4c5-453c-9b0c-4c43a7315a99&#x2F;calendar
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Read my other &lt;a href=&quot;&#x2F;journal&quot;&gt;entries&lt;&#x2F;a&gt; for more juicy content!&lt;&#x2F;p&gt;
+&lt;p&gt;See ya for now 👋 &lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

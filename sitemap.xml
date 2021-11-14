@@ -1,291 +1,222 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    
-        
-        <url>
-            <loc>http://nmnx.org/dev/</loc>
-            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/</loc>
-            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/opencl/</loc>
-            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/dev/opencl/</loc>
-            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/rust/</loc>
-            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/software/</loc>
-            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/</loc>
-            <lastmod>2021-03-24T00:47:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/dev/frustool/</loc>
-            <lastmod>2021-03-22T19:21:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/python/</loc>
-            <lastmod>2021-03-22T19:21:24+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/ai/basic-nn/</loc>
-            <lastmod>2021-03-07T12:17:55+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/ai/</loc>
-            <lastmod>2021-03-07T12:17:55+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/debate/</loc>
-            <lastmod>2020-11-15T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/just-random-things/</loc>
-            <lastmod>2020-11-15T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/</loc>
-            <lastmod>2020-11-15T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/privacy/</loc>
-            <lastmod>2020-11-15T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/rng/</loc>
-            <lastmod>2020-11-15T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/wipe-disks/</loc>
-            <lastmod>2020-11-02T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/disks/</loc>
-            <lastmod>2020-11-02T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/noobs/</loc>
-            <lastmod>2020-11-02T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/gpg-encryption/</loc>
-            <lastmod>2020-10-29T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/gpg/</loc>
-            <lastmod>2020-10-29T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/gpg-signing/</loc>
-            <lastmod>2020-10-28T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/about-gpg/</loc>
-            <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/ctf/</loc>
-            <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/hacking/</loc>
-            <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/htb/</loc>
-            <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/interdim-internet/</loc>
-            <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/dev/flag-decrypter/</loc>
-            <lastmod>2020-10-25T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/privacy/</loc>
-            <lastmod>2020-09-05T21:05:33+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/wwdc2020/</loc>
-            <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/journal/intro/</loc>
-            <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/credits/</loc>
-            <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/pgp/</loc>
-            <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/donate/</loc>
-            <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/awards/</loc>
-            <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/about/</loc>
-            <lastmod>2016-11-05T21:05:33+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/dev/coldlock/</loc>
-            <lastmod>2014-01-14T19:20:10+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/peltier/</loc>
-            <lastmod>2014-01-14T19:20:10+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/projects/</loc>
-            <lastmod>2014-01-14T19:20:10+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/tags/stem/</loc>
-            <lastmod>2014-01-14T19:20:10+05:30</lastmod>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://nmnx.org/categories/</loc>
-        </url>
-        
-    
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://nmnx.org/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/about/</loc>
+        <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/awards/</loc>
+        <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/credits/</loc>
+        <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/dev/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/dev/blasty/</loc>
+        <lastmod>2021-04-07</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/dev/coldlock/</loc>
+        <lastmod>2014-01-14T19:20:10+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/dev/flag-decrypter/</loc>
+        <lastmod>2020-10-25</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/dev/frustool/</loc>
+        <lastmod>2021-03-22T19:21:24+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/dev/opencl/</loc>
+        <lastmod>2021-03-24T00:47:24+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/donate/</loc>
+        <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/101/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/101/bitfields-101/</loc>
+        <lastmod>2021-04-07</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/101/sizes-101/</loc>
+        <lastmod>2021-04-07</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/about-gpg/</loc>
+        <lastmod>2020-10-27</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/ai/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/ai/basic-nn/</loc>
+        <lastmod>2021-03-07</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/calendar-spam/</loc>
+        <lastmod>2021-04-05</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/dawei/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/dawei/arch-linux/</loc>
+        <lastmod>2021-11-09</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/dawei/write-disk-images/</loc>
+        <lastmod>2021-03-12</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/good-tips/</loc>
+        <lastmod>2021-07-29</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/gpg-encryption/</loc>
+        <lastmod>2020-10-29</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/gpg-signing/</loc>
+        <lastmod>2020-10-28</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/interdim-internet/</loc>
+        <lastmod>2020-10-27</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/intro/</loc>
+        <lastmod>2019-07-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/just-random-things/</loc>
+        <lastmod>2020-11-15</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/lmg-style/</loc>
+        <lastmod>2021-03-15</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/wipe-disks/</loc>
+        <lastmod>2020-11-02</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/journal/wwdc2020/</loc>
+        <lastmod>2019-07-01</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/pgp/</loc>
+        <lastmod>2016-11-05T21:05:33+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/privacy/</loc>
+        <lastmod>2020-09-05T21:05:33+05:30</lastmod>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/101/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/blasty/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/ctf/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/da-wei/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/debate/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/disks/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/gpg/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/hacking/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/help/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/htb/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/iphone/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/journal/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/linux/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/noobs/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/notes/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/opencl/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/peltier/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/philosophy/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/privacy/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/projects/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/python/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/rng/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/rust/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/rustfu/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/series/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/software/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/spam/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/stem/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/structs/</loc>
+    </url>
+    <url>
+        <loc>https://nmnx.org/tags/thoughts/</loc>
+    </url>
 </urlset>

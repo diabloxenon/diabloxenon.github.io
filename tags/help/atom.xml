@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>XLD&#x27;s Journal - Help</title>
+	<link href="https://nmnx.org/tags/help/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nmnx.org"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-07-29T00:00:00+00:00</updated>
+	<id>https://nmnx.org/tags/help/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Good Tips!</title>
+		<published>2021-07-29T00:00:00+00:00</published>
+		<updated>2021-07-29T00:00:00+00:00</updated>
+		<link href="https://nmnx.org/journal/good-tips/" type="text/html"/>
+		<id>https://nmnx.org/journal/good-tips/</id>
+		<content type="html">&lt;p&gt;Random uncategorized thoughts and notes&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;ol&gt;
+&lt;li&gt;A flywheel is a rotating mechanical device that is used to store rotational energy.&lt;&#x2F;li&gt;
+&lt;li&gt;Flywheel resists changes in rotational speed and is used to smooth out mechanical motion.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;End thoughts: It&#x27;s kinda functions like an electrical capacitor but main difference is in the energies they are dealing with i.e. Electrical (Capacitor) and Rotational (Flywheel)&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Day one</title>
+		<published>2019-07-01T00:00:00+00:00</published>
+		<updated>2019-07-01T00:00:00+00:00</updated>
+		<link href="https://nmnx.org/journal/intro/" type="text/html"/>
+		<id>https://nmnx.org/journal/intro/</id>
+		<content type="html">&lt;p&gt;A journal has been born! This entry shows how to use this journal efficiently to your use. A basic FAQ to get you started for gooood~&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;em&gt;PLEASE NOTE:&lt;&#x2F;em&gt; This journal may remain in development for year or two, due to organizing and recollecting my knowledge and information from different storage media (i.e. Notebooks, Old blogs, Past websites and more). But this is will be a fun project and grand unification of my computer science knowledge, a bigger crossover than Avengers Endgame 🤣&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;search&quot;&gt;Search&lt;&#x2F;h3&gt;
+&lt;p&gt;To search for content here, you need to use your browser&#x27;s search functionality by pressing &lt;code&gt;ctrl+f&lt;&#x2F;code&gt; on Windows&#x2F;Linux or press &lt;code&gt;cmd+f&lt;&#x2F;code&gt; for Mac.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;headlines&quot;&gt;Headlines&lt;&#x2F;h3&gt;
+&lt;p&gt;Let&#x27;s teach you something good about HTTP links, (if you know just ignore, this tip is only for noobs). &lt;&#x2F;p&gt;
+&lt;p&gt;You see the &lt;code&gt;https:&#x2F;&#x2F;nmnx.org&#x2F;journal&#x2F;intro&#x2F;&lt;&#x2F;code&gt; link above and try adding &lt;code&gt;#you-are-here&lt;&#x2F;code&gt; in front of it so that your URL becomes like &lt;code&gt;https:&#x2F;&#x2F;nmnx.org&#x2F;journal&#x2F;intro&#x2F;#you-are-here&lt;&#x2F;code&gt; or like this &lt;code&gt;https:&#x2F;&#x2F;nmnx.org&#x2F;journal&#x2F;intro#you-are-here&lt;&#x2F;code&gt; (doesn&#x27;t matter) Try it!&lt;&#x2F;p&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;br&#x2F;&gt;
+&lt;h3 id=&quot;you-are-here&quot;&gt;You are here&lt;&#x2F;h3&gt;
+&lt;p&gt;So, you have heed my advice? Good, because you are going to do this to search topics in between the entries. Now get back up there by removing &lt;code&gt;#you-are-here&lt;&#x2F;code&gt; and typing &lt;code&gt;#headlines&lt;&#x2F;code&gt; and you know the drill.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

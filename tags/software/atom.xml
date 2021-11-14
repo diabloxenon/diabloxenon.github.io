@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>XLD&#x27;s Journal - Software</title>
+	<link href="https://nmnx.org/tags/software/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nmnx.org"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-04-07T00:00:00+00:00</updated>
+	<id>https://nmnx.org/tags/software/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Blasty</title>
+		<published>2021-04-07T00:00:00+00:00</published>
+		<updated>2021-04-07T00:00:00+00:00</updated>
+		<link href="https://nmnx.org/dev/blasty/" type="text/html"/>
+		<id>https://nmnx.org/dev/blasty/</id>
+		<content type="html">&lt;p&gt;Coming soon with project MasterBlaster. Stay tuned 😉 Repository link &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;diabloxenon&#x2F;blasty&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>OpenCL</title>
+		<published>2021-03-24T00:47:24+05:30</published>
+		<updated>2021-03-24T00:47:24+05:30</updated>
+		<link href="https://nmnx.org/dev/opencl/" type="text/html"/>
+		<id>https://nmnx.org/dev/opencl/</id>
+		<content type="html">&lt;p&gt;Yet another OpenCL API but with long term maintainance and support with stable features. Repository link &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;diabloxenon&#x2F;opencl&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Frustool</title>
+		<published>2021-03-22T19:21:24+05:30</published>
+		<updated>2021-03-22T19:21:24+05:30</updated>
+		<link href="https://nmnx.org/dev/frustool/" type="text/html"/>
+		<id>https://nmnx.org/dev/frustool/</id>
+		<content type="html">&lt;p&gt;This tool was created to serve the purpose of financial analysis in trading engines. Written in Rust, supported by Python. Repository link &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;diabloxenon&#x2F;frustool&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Flag Guides Decrypter</title>
+		<published>2020-10-25T00:00:00+00:00</published>
+		<updated>2020-10-25T00:00:00+00:00</updated>
+		<link href="https://nmnx.org/dev/flag-decrypter/" type="text/html"/>
+		<id>https://nmnx.org/dev/flag-decrypter/</id>
+		<content type="html">&lt;p&gt;This python based tool will help you in decrypting the flag journals and CTF guides presented on this site. &lt;strong&gt;FOR NOOBS ONLY&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;The program is as follows&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; class=&quot;language-python z-code&quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;z-source z-python&quot;&gt;
+&lt;span class=&quot;z-meta z-statement z-import z-python&quot;&gt;&lt;span class=&quot;z-keyword z-control z-import z-python&quot;&gt;import&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-qualified-name z-python&quot;&gt;&lt;span class=&quot;z-meta z-generic-name z-python&quot;&gt;base64&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>

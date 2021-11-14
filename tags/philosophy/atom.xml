@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>XLD&#x27;s Journal - Philosophy</title>
+	<link href="https://nmnx.org/tags/philosophy/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nmnx.org"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-03-15T00:00:00+00:00</updated>
+	<id>https://nmnx.org/tags/philosophy/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Lean Mean Green</title>
+		<published>2021-03-15T00:00:00+00:00</published>
+		<updated>2021-03-15T00:00:00+00:00</updated>
+		<link href="https://nmnx.org/journal/lmg-style/" type="text/html"/>
+		<id>https://nmnx.org/journal/lmg-style/</id>
+		<content type="html">&lt;p&gt;Ever thought about of &lt;em&gt;What is the greatest coding style ever?&lt;&#x2F;em&gt;, Well, it turns out there is none but what I follow and had developed over time is my LMG style. No, I am not talking about &amp;quot;Light Machine Gun&amp;quot;, this is called &lt;em&gt;Lean Mean Green&lt;&#x2F;em&gt; style of coding-fu.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;So, I will tell you the philosophy behind this word. Truth is, I was reading the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dokk%C5%8Dd%C5%8D&quot;&gt;Dokkōdō&lt;&#x2F;a&gt; and it kinda made me thinking about my own choices in path of my life and it brought the question into my mind, which I asked earlier of you. So, I derived this term &lt;em&gt;Lean Mean Green&lt;&#x2F;em&gt; to instantiate a simple way of coding style that one can follow during his journey.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Lean&lt;&#x2F;strong&gt; means simple and slim, like a cut of lean meat, the code consists of basic tasks and algorithms representing as simple as possible.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Mean&lt;&#x2F;strong&gt; means meaning. Hehe, too much mean in one sentence eh? The code is in itself descriptive and functional, basically it does one job what it tells you about and does it perfectly well. &lt;em&gt;Fact:&lt;&#x2F;em&gt; UNIX also follows same philosophy.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Green&lt;&#x2F;strong&gt; is the green matter of code i.e. Documentation. Without proper commenting and documentation in between functions, the code is like a spaghetti without meatballs&#x2F;veggies&#x2F;seasoning or a pizza without pepperoni&#x2F;olives etc. if you know what I mean.&lt;&#x2F;p&gt;
+&lt;p&gt;Oh and btw, don&#x27;t think that you should not pursue the taste of good food. Once in a while, you gotta enjoy your life and change your daily game. Like I use to say and you can quote me on this:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Life is a video game, where you have only one life&lt;&#x2F;p&gt;
+&lt;p&gt;  -- Xenon Lucifer Diablo&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</content>
+	</entry>
+</feed>

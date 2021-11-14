@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+<title>Bitfields Demystified - diabloxenon | nmnx.org</title>
+<meta property="og:title" content="Bitfields Demystified - diabloxenon | nmnx.org">
+<meta property="twitter:title" content="Bitfields Demystified - diabloxenon | nmnx.org">
+
+
+<meta name="description" content="Bitfields are mysterious when it comes to Rust language and people don&#x27;t know the right way to approach them. The 101 series of this journal is to present things that I find everyone should know about that particular language. So, let&#x27;s start with our favorite Rust ❤️.
+">
+<meta property="og:description" content="Bitfields are mysterious when it comes to Rust language and people don&#x27;t know the right way to approach them. The 101 series of this journal is to present things that I find everyone should know about that particular language. So, let&#x27;s start with our favorite Rust ❤️.
+">
+<meta property="twitter:description" content="Bitfields are mysterious when it comes to Rust language and people don&#x27;t know the right way to approach them. The 101 series of this journal is to present things that I find everyone should know about that particular language. So, let&#x27;s start with our favorite Rust ❤️.
+">
+
+
+<meta property="og:url" content="https://nmnx.org/journal/101/bitfields-101/">
+<meta property="og:locale" content="en-UK">
+<meta property="og:image" content="">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="">
+<meta name="twitter:site" content="https://twitter.com/diabloxenon">
+<meta name="twitter:creator" content="@diabloxenon">
+
+
+
+
+    <link rel="stylesheet" href="/xeno.css"
+        integrity="sha512-tleHwVgzGzhajlCA7sQ1kVNCCuDNVI8zbopjhOleEkqcAYAa2O6rlXdzoWI3klHhTsv6BPEWVHEQYPDbhIa7mQ==">
+</head>
+
+<body class="xeno">
+    
+<div class="buckt">
+    <header class="navbar row">
+        <div class="col-6 col-sm-12 row">
+            <div class="col-3 col-sm-12"><a href="https:&#x2F;&#x2F;nmnx.org">diabloxenon</a>:~#</div>
+            <div class="col-9 col-sm-12 prompt">
+
+
+/<a href="/journal/" title="journal">journal</a>/<a href="/journal&#x2F;101/" title="101">101</a>/<a href="/journal&#x2F;101&#x2F;bitfields-101/" title="bitfields-101">bitfields-101</a>/<a href="/journal&#x2F;101&#x2F;bitfields-101&#x2F;/" title=""></a>
+
+</div>
+        </div>
+        <div class="col-1 col-sm-12"><input id="search" placeholder="&#xf002; search"></input></div>
+        <nav class="navlinks col-5 col-sm-12 row">
+            <ul class="group col-8 col-sm-12">
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;awards"
+                        title="awards" rel="nofollow noreferrer">/awards</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;journal"
+                        title="journal" rel="nofollow noreferrer">/journal</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;dev"
+                        title="dev" rel="nofollow noreferrer">/dev</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;tags"
+                        title="tags" rel="nofollow noreferrer">/tags</a></li>
+                
+            </ul>
+            <ul class="social col-4 col-sm-12">
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;github.com&#x2F;diabloxenon"
+                        title="&amp;#xf09b;" target="_blank" rel="nofollow noreferrer"><span
+                            class="icon">&#xf09b;</span></a>
+                </li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;t.me&#x2F;diabloxenon"
+                        title="&amp;#xe217;" target="_blank" rel="nofollow noreferrer"><span
+                            class="icon">&#xe217;</span></a>
+                </li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;twitter.com&#x2F;diabloxenon"
+                        title="&amp;#xf099;" target="_blank" rel="nofollow noreferrer"><span
+                            class="icon">&#xf099;</span></a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+</div>
+
+
+    
+<div class="buckt">
+    <div class="search-results">
+        <h1>Search Results</h1>
+        <noscript>Enable Javascript to use the search feature of this journal.</noscript>
+        <ul class="search-results__items"></ul>
+        <hr />
+    </div>
+</div>
+
+
+    
+<article class="buckt">
+    <h1>Bitfields Demystified</h1>
+    <div class="title row">
+        <div class="date col-6 col-sm-12">
+            <div class="pub">
+                <span class="icon">&#xfb4e;</span> Apr 07, 2021
+            </div>
+            
+        </div>
+        <div class="col-6 col-sm-12">
+            <div class="time">
+                <span class="icon">&#xfa1a;</span> 4 minutes
+            </div>
+            <ul class="tags">
+                
+                <br />
+                
+                <li><a href="https://nmnx.org/tags/rust/">
+                        <div class="tagid">Rust</div>
+                    </a></li>
+                
+                <li><a href="https://nmnx.org/tags/101/">
+                        <div class="tagid">101</div>
+                    </a></li>
+                
+                <li><a href="https://nmnx.org/tags/rustfu/">
+                        <div class="tagid">Rustfu</div>
+                    </a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        
+        <h2 style="margin:0">Contents</h2>
+        <ul>
+            
+            <li>
+                <a href="https://nmnx.org/journal/101/bitfields-101/#what-is-bitfield">What is Bitfield?</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/101/bitfields-101/#operation-1-grabs-the-current-item-and-rejects-it">Operation 1: Grabs the current item and rejects it</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/101/bitfields-101/#operation-2-grabs-the-current-item-shakes-it-flips-it-and-put-it-back">Operation 2: Grabs the current item, shakes it, flips it and put it back</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/101/bitfields-101/#usage-of-bitfields-in-rust">Usage of Bitfields in Rust</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://nmnx.org/journal/101/bitfields-101/#using-structures">Using Structures</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://nmnx.org/journal/101/bitfields-101/#using-enumerators">Using Enumerators</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+        </ul>
+        
+        <p>Bitfields are mysterious when it comes to Rust language and people don't know the right way to approach them. The <em>101 series</em> of this journal is to present things that I find everyone should know about that particular language. So, let's start with our favorite Rust ❤️.</p>
+<span id="continue-reading"></span><h2 id="what-is-bitfield">What is Bitfield?</h2>
+<p>Bitfields are simple data structures, which is used to define standard properties or to enable features inside a function or a program. Typically, they are used at a lower level of the machine.</p>
+<p>For example, the microcontroller inside an Arduino (idk if you are familiar with it) uses very low memory and store space. So, we need to design a particular set of options or states that are to be enabled once that bit is on.</p>
+<p>Here we will consider a 8-bit solution which can be defined using memory space of only a single byte and assignable via <code>u8</code> type in Rust which is represented as <code>1111 1111</code></p>
+<p>Let's arbitrarily take 8 options that we want for a program we need to develop for a factory robotic arm, suppose:</p>
+<ol>
+<li>Bit 1: Toggles power to arm</li>
+<li>Bit 2: Grabs the current item from assembly line</li>
+<li>Bit 3: Skip to next item</li>
+<li>Bit 4: Back to previous item</li>
+<li>Bit 5: Put the item on rejected line</li>
+<li>Bit 6: Put the item on assembly line</li>
+<li>Bit 7: Flips the item upside down (reverses it)</li>
+<li>Bit 8: Shakes the item</li>
+</ol>
+<p>Now, we have 8 options that we want to consider for a particular operation:</p>
+<h2 id="operation-1-grabs-the-current-item-and-rejects-it">Operation 1: Grabs the current item and rejects it</h2>
+<p>We need 3 bits enabled in this case, <em>Bit 1 OR Bit 2 OR Bit 5</em>. Doing this, our bitmap will look something like <code>0001 0011</code></p>
+<h2 id="operation-2-grabs-the-current-item-shakes-it-flips-it-and-put-it-back">Operation 2: Grabs the current item, shakes it, flips it and put it back</h2>
+<p>We need 5 bits enabled for this operation, <em>Bit 1 OR Bit 2 OR Bit 6 OR Bit 7 OR Bit 8</em>. In this case, our bitmap will be like this <code>1110 0011</code></p>
+<h1 id="usage-of-bitfields-in-rust">Usage of Bitfields in Rust</h1>
+<p>There are 2 ways of programming bitfields in Rust</p>
+<ol>
+<li>Using structures</li>
+<li>Using enumerators</li>
+</ol>
+<h2 id="using-structures">Using Structures</h2>
+<p>Bitfields used in structures are based on concept of associated constants, which uses direct association instead of type conversion of different variants. This calls for an easy comparison of bitfields without type casting it everytime.</p>
+<pre data-lang="rust" class="language-rust z-code"><code class="language-rust" data-lang="rust"><span class="z-source z-rust"><span class="z-meta z-struct z-rust"><span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-struct z-rust">struct</span> </span><span class="z-meta z-struct z-rust"><span class="z-entity z-name z-struct z-rust">RoboticArmProperties</span></span><span class="z-punctuation z-terminator z-rust">;</span>
+
+<span class="z-meta z-impl z-rust"><span class="z-storage z-type z-impl z-rust">impl</span> </span><span class="z-meta z-impl z-rust"><span class="z-entity z-name z-impl z-rust">RoboticArmProperties</span> </span><span class="z-meta z-impl z-rust"><span class="z-meta z-block z-rust"><span class="z-punctuation z-section z-block z-begin z-rust">{</span>
+    <span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-rust">const</span> <span class="z-constant z-other z-rust">POWER</span><span class="z-punctuation z-separator z-rust">:</span> <span class="z-storage z-type z-rust">u8</span> <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">0</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-rust">const</span> <span class="z-constant z-other z-rust">GRAB_ASSEMBLY</span><span class="z-punctuation z-separator z-rust">:</span> <span class="z-storage z-type z-rust">u8</span> <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-rust">const</span> <span class="z-constant z-other z-rust">SKIP_TO_NEXT</span><span class="z-punctuation z-separator z-rust">:</span> <span class="z-storage z-type z-rust">u8</span> <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">2</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-rust">const</span> <span class="z-constant z-other z-rust">BACK_TO_PREV</span><span class="z-punctuation z-separator z-rust">:</span> <span class="z-storage z-type z-rust">u8</span> <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">3</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-rust">const</span> <span class="z-constant z-other z-rust">PUT_REJECTED</span><span class="z-punctuation z-separator z-rust">:</span> <span class="z-storage z-type z-rust">u8</span> <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">4</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-rust">const</span> <span class="z-constant z-other z-rust">PUT_ASSEMBLY</span><span class="z-punctuation z-separator z-rust">:</span> <span class="z-storage z-type z-rust">u8</span> <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">5</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-rust">const</span> <span class="z-constant z-other z-rust">VERTICAL_FLIP</span><span class="z-punctuation z-separator z-rust">:</span> <span class="z-storage z-type z-rust">u8</span> <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">6</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-rust">const</span> <span class="z-constant z-other z-rust">SHAKES</span><span class="z-punctuation z-separator z-rust">:</span> <span class="z-storage z-type z-rust">u8</span> <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">7</span><span class="z-punctuation z-terminator z-rust">;</span>
+</span><span class="z-meta z-block z-rust"><span class="z-punctuation z-section z-block z-end z-rust">}</span></span></span>
+
+<span class="z-meta z-function z-rust"><span class="z-meta z-function z-rust"><span class="z-storage z-type z-function z-rust">fn</span> </span><span class="z-entity z-name z-function z-rust">main</span></span><span class="z-meta z-function z-rust"><span class="z-meta z-function z-parameters z-rust"><span class="z-punctuation z-section z-parameters z-begin z-rust">(</span></span><span class="z-meta z-function z-rust"><span class="z-meta z-function z-parameters z-rust"><span class="z-punctuation z-section z-parameters z-end z-rust">)</span></span></span></span><span class="z-meta z-function z-rust"> </span><span class="z-meta z-function z-rust"><span class="z-meta z-block z-rust"><span class="z-punctuation z-section z-block z-begin z-rust">{</span>
+    <span class="z-storage z-type z-rust">let</span> operation_1 <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">POWER</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">GRAB_ASSEMBLY</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">PUT_REJECTED</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-type z-rust">let</span> operation_2 <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">POWER</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">GRAB_ASSEMBLY</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">PUT_ASSEMBLY</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">VERTICAL_FLIP</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">SHAKES</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-support z-macro z-rust">println!</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span></span><span class="z-meta z-group z-rust"><span class="z-string z-quoted z-double z-rust"><span class="z-punctuation z-definition z-string z-begin z-rust">&quot;</span>Enabling Operation 1: <span class="z-constant z-other z-placeholder z-rust">{}</span><span class="z-punctuation z-definition z-string z-end z-rust">&quot;</span></span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-separator z-rust">,</span> operation_1<span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-support z-macro z-rust">println!</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span></span><span class="z-meta z-group z-rust"><span class="z-string z-quoted z-double z-rust"><span class="z-punctuation z-definition z-string z-begin z-rust">&quot;</span>Enabling Operation 2: <span class="z-constant z-other z-placeholder z-rust">{}</span><span class="z-punctuation z-definition z-string z-end z-rust">&quot;</span></span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-separator z-rust">,</span> operation_2<span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-punctuation z-terminator z-rust">;</span>
+</span><span class="z-meta z-block z-rust"><span class="z-punctuation z-section z-block z-end z-rust">}</span></span></span>
+</span></code></pre>
+<h2 id="using-enumerators">Using Enumerators</h2>
+<p>We will use enumerators to create new properties and adding them together as a single typeform using <code>#[repr(u8)]</code> macro which declares the bits to u8 type.</p>
+<p>Furthermore, to use these bitfields, we have to again typecast the enum variants to properly get our assigned values.</p>
+<pre data-lang="rust" class="language-rust z-code"><code class="language-rust" data-lang="rust"><span class="z-source z-rust"><span class="z-meta z-annotation z-rust"><span class="z-punctuation z-definition z-annotation z-rust">#</span><span class="z-punctuation z-section z-group z-begin z-rust">[</span><span class="z-variable z-annotation z-rust">repr</span><span class="z-meta z-annotation z-parameters z-rust"><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span></span></span><span class="z-meta z-annotation z-parameters z-rust"><span class="z-meta z-group z-rust">u8</span></span><span class="z-meta z-annotation z-parameters z-rust"><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-end z-rust">)</span></span></span><span class="z-punctuation z-section z-group z-end z-rust">]</span></span>
+<span class="z-meta z-enum z-rust"><span class="z-storage z-modifier z-rust">pub</span> <span class="z-storage z-type z-enum z-rust">enum</span> <span class="z-entity z-name z-enum z-rust">RoboticArmProperties</span> <span class="z-meta z-block z-rust"><span class="z-punctuation z-section z-block z-begin z-rust">{</span>
+    Power <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">0</span><span class="z-punctuation z-separator z-rust">,</span>
+    GrabAssembly <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span><span class="z-punctuation z-separator z-rust">,</span>
+    SkipToNext <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">2</span><span class="z-punctuation z-separator z-rust">,</span>
+    BackToPrev <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">3</span><span class="z-punctuation z-separator z-rust">,</span>
+    PutRejected <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">4</span><span class="z-punctuation z-separator z-rust">,</span>
+    PutAssembly <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">5</span><span class="z-punctuation z-separator z-rust">,</span>
+    VerticalFlip <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">6</span><span class="z-punctuation z-separator z-rust">,</span>
+    Shakes <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">1</span> <span class="z-keyword z-operator z-comparison z-rust">&lt;</span><span class="z-keyword z-operator z-comparison z-rust">&lt;</span> <span class="z-constant z-numeric z-integer z-decimal z-rust">7</span><span class="z-punctuation z-separator z-rust">,</span>
+</span><span class="z-meta z-block z-rust"><span class="z-punctuation z-section z-block z-end z-rust">}</span></span></span>
+
+<span class="z-meta z-function z-rust"><span class="z-meta z-function z-rust"><span class="z-storage z-type z-function z-rust">fn</span> </span><span class="z-entity z-name z-function z-rust">main</span></span><span class="z-meta z-function z-rust"><span class="z-meta z-function z-parameters z-rust"><span class="z-punctuation z-section z-parameters z-begin z-rust">(</span></span><span class="z-meta z-function z-rust"><span class="z-meta z-function z-parameters z-rust"><span class="z-punctuation z-section z-parameters z-end z-rust">)</span></span></span></span><span class="z-meta z-function z-rust"> </span><span class="z-meta z-function z-rust"><span class="z-meta z-block z-rust"><span class="z-punctuation z-section z-block z-begin z-rust">{</span>
+    <span class="z-storage z-type z-rust">let</span> operation_1 <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span>Power <span class="z-keyword z-operator z-rust">as</span> <span class="z-storage z-type z-rust">u8</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span>GrabAssembly <span class="z-keyword z-operator z-rust">as</span> <span class="z-storage z-type z-rust">u8</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span>PutRejected <span class="z-keyword z-operator z-rust">as</span> <span class="z-storage z-type z-rust">u8</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-storage z-type z-rust">let</span> operation_2 <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span>Power <span class="z-keyword z-operator z-rust">as</span> <span class="z-storage z-type z-rust">u8</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span>GrabAssembly <span class="z-keyword z-operator z-rust">as</span> <span class="z-storage z-type z-rust">u8</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span>PutAssembly <span class="z-keyword z-operator z-rust">as</span> <span class="z-storage z-type z-rust">u8</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span>VerticalFlip <span class="z-keyword z-operator z-rust">as</span> <span class="z-storage z-type z-rust">u8</span>
+        <span class="z-keyword z-operator z-bitwise z-rust">|</span> <span class="z-meta z-path z-rust">RoboticArmProperties<span class="z-punctuation z-accessor z-rust">::</span></span>Shakes <span class="z-keyword z-operator z-rust">as</span> <span class="z-storage z-type z-rust">u8</span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-support z-macro z-rust">println!</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span></span><span class="z-meta z-group z-rust"><span class="z-string z-quoted z-double z-rust"><span class="z-punctuation z-definition z-string z-begin z-rust">&quot;</span>Enabling Operation 1: <span class="z-constant z-other z-placeholder z-rust">{}</span><span class="z-punctuation z-definition z-string z-end z-rust">&quot;</span></span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-separator z-rust">,</span> operation_1<span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-punctuation z-terminator z-rust">;</span>
+    <span class="z-support z-macro z-rust">println!</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span></span><span class="z-meta z-group z-rust"><span class="z-string z-quoted z-double z-rust"><span class="z-punctuation z-definition z-string z-begin z-rust">&quot;</span>Enabling Operation 2: <span class="z-constant z-other z-placeholder z-rust">{}</span><span class="z-punctuation z-definition z-string z-end z-rust">&quot;</span></span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-separator z-rust">,</span> operation_2<span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-punctuation z-terminator z-rust">;</span>
+</span><span class="z-meta z-block z-rust"><span class="z-punctuation z-section z-block z-end z-rust">}</span></span></span>
+</span></code></pre>
+
+    </div>
+</article>
+
+
+    
+<div class="footer">
+    <div class="buckt row">
+        <div class="copy col-4 col-sm-12">
+            echo (C) 2021&nbsp;<a href="https://nmnx.org" target="_blank"
+                rel="nofollow noreferrer">Naman
+                Bishnoi</a>&nbsp;| cat
+        </div>
+        <ul class="links col-8 col-sm-12">
+            <li><a href="mailto:me@nmnx.org" target="_blank" title="me@nmnx.org"
+                    rel="nofollow noreferrer">me@nmnx.org</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;about"
+                    title="about" rel="nofollow noreferrer">/about</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;donate"
+                    title="donate" rel="nofollow noreferrer">/donate</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;credits"
+                    title="credits" rel="nofollow noreferrer">/credits</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;privacy"
+                    title="privacy" rel="nofollow noreferrer">/privacy</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;pgp"
+                    title="pgp" rel="nofollow noreferrer">/pgp</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;#"
+                    title="top" rel="nofollow noreferrer">/top</a></li>
+            
+            <li>
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                    title="Creative Commons License" rel="nofollow noreferrer"><span class="icon">&#xe291;</span><span
+                        class="icon">&#xe290;</span><span class="icon">&#xe292;</span><span
+                        class="icon">&#xe297;</span></a>
+            </li>
+            <!-- "/ARFR6J0=" -->
+        </ul>
+    </div>
+</div>
+
+
+    <script type="text/javascript" src="/elasticlunr.min.js"></script>
+    <script type="text/javascript" src="/search_index.en.js"></script>
+    <script type="text/javascript" src="/search.js"></script>
+</body>
+
+</html>

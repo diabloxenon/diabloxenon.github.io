@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+<title>I use Arch BTW - diabloxenon | nmnx.org</title>
+<meta property="og:title" content="I use Arch BTW - diabloxenon | nmnx.org">
+<meta property="twitter:title" content="I use Arch BTW - diabloxenon | nmnx.org">
+
+
+<meta name="description" content="Sometimes, I want to shout, as loud as I could. Why you ask? Simple, ITS ANNOYING AF TO REINSTALL OS WITHOUT PROPER GUIDE. This journal entry mentions the step-by-step instructions on how I personally install Arch on my system.
+">
+<meta property="og:description" content="Sometimes, I want to shout, as loud as I could. Why you ask? Simple, ITS ANNOYING AF TO REINSTALL OS WITHOUT PROPER GUIDE. This journal entry mentions the step-by-step instructions on how I personally install Arch on my system.
+">
+<meta property="twitter:description" content="Sometimes, I want to shout, as loud as I could. Why you ask? Simple, ITS ANNOYING AF TO REINSTALL OS WITHOUT PROPER GUIDE. This journal entry mentions the step-by-step instructions on how I personally install Arch on my system.
+">
+
+
+<meta property="og:url" content="https://nmnx.org/journal/dawei/arch-linux/">
+<meta property="og:locale" content="en-UK">
+<meta property="og:image" content="">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="">
+<meta name="twitter:site" content="https://twitter.com/diabloxenon">
+<meta name="twitter:creator" content="@diabloxenon">
+
+
+
+
+    <link rel="stylesheet" href="/xeno.css"
+        integrity="sha512-tleHwVgzGzhajlCA7sQ1kVNCCuDNVI8zbopjhOleEkqcAYAa2O6rlXdzoWI3klHhTsv6BPEWVHEQYPDbhIa7mQ==">
+</head>
+
+<body class="xeno">
+    
+<div class="buckt">
+    <header class="navbar row">
+        <div class="col-6 col-sm-12 row">
+            <div class="col-3 col-sm-12"><a href="https:&#x2F;&#x2F;nmnx.org">diabloxenon</a>:~#</div>
+            <div class="col-9 col-sm-12 prompt">
+
+
+/<a href="/journal/" title="journal">journal</a>/<a href="/journal&#x2F;dawei/" title="dawei">dawei</a>/<a href="/journal&#x2F;dawei&#x2F;arch-linux/" title="arch-linux">arch-linux</a>/<a href="/journal&#x2F;dawei&#x2F;arch-linux&#x2F;/" title=""></a>
+
+</div>
+        </div>
+        <div class="col-1 col-sm-12"><input id="search" placeholder="&#xf002; search"></input></div>
+        <nav class="navlinks col-5 col-sm-12 row">
+            <ul class="group col-8 col-sm-12">
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;awards"
+                        title="awards" rel="nofollow noreferrer">/awards</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;journal"
+                        title="journal" rel="nofollow noreferrer">/journal</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;dev"
+                        title="dev" rel="nofollow noreferrer">/dev</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;tags"
+                        title="tags" rel="nofollow noreferrer">/tags</a></li>
+                
+            </ul>
+            <ul class="social col-4 col-sm-12">
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;github.com&#x2F;diabloxenon"
+                        title="&amp;#xf09b;" target="_blank" rel="nofollow noreferrer"><span
+                            class="icon">&#xf09b;</span></a>
+                </li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;t.me&#x2F;diabloxenon"
+                        title="&amp;#xe217;" target="_blank" rel="nofollow noreferrer"><span
+                            class="icon">&#xe217;</span></a>
+                </li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;twitter.com&#x2F;diabloxenon"
+                        title="&amp;#xf099;" target="_blank" rel="nofollow noreferrer"><span
+                            class="icon">&#xf099;</span></a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+</div>
+
+
+    
+<div class="buckt">
+    <div class="search-results">
+        <h1>Search Results</h1>
+        <noscript>Enable Javascript to use the search feature of this journal.</noscript>
+        <ul class="search-results__items"></ul>
+        <hr />
+    </div>
+</div>
+
+
+    
+<article class="buckt">
+    <h1>I use Arch BTW</h1>
+    <div class="title row">
+        <div class="date col-6 col-sm-12">
+            <div class="pub">
+                <span class="icon">&#xfb4e;</span> Dec 09, 2020
+            </div>
+            
+            <div class="upd">
+                <span class="icon">&#xfbae;</span> Nov 09, 2021
+            </div>
+            
+        </div>
+        <div class="col-6 col-sm-12">
+            <div class="time">
+                <span class="icon">&#xfa1a;</span> 8 minutes
+            </div>
+            <ul class="tags">
+                
+                <br />
+                
+                <li><a href="https://nmnx.org/tags/linux/">
+                        <div class="tagid">Linux</div>
+                    </a></li>
+                
+                <li><a href="https://nmnx.org/tags/noobs/">
+                        <div class="tagid">NOOBS</div>
+                    </a></li>
+                
+                <li><a href="https://nmnx.org/tags/da-wei/">
+                        <div class="tagid">Da Wei</div>
+                    </a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        
+        <h2 style="margin:0">Contents</h2>
+        <ul>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#networking-on-tokyo-tower">Networking: ON 🗼</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#set-timedate-calendar">Set timedate 📆</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#partition-it-right">Partition it right 🗂️</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#luks-here">LUKS here</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#logical-being">Logical Being</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#format-partitions-open-file-fo">Format Partitions 📁</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#mount-partitions-open-file-folder">Mount Partitions 📂</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#select-mirrors-for-download">Select Mirrors for download 🪞</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#bare-minimum-things">Bare Minimum Things 🦺</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#the-main-course-pot-of-food">The Main Course :pot_of_food:</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#dessert-icecream">Dessert 🍦</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#generating-efi">Generating EFI 🧬</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#bare-minimum-things-thinking">Bare minimum things 🤔</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/arch-linux/#final-touch-man-getting-haircut">Final Touch :man_getting_haircut:</a>
+                
+            </li>
+            
+        </ul>
+        
+        <p>Sometimes, I want to shout, as loud as I could. Why you ask? Simple, ITS ANNOYING AF TO REINSTALL OS WITHOUT PROPER GUIDE. This journal entry mentions the step-by-step instructions on how I personally install Arch on my system.</p>
+<span id="continue-reading"></span>
+<p>Although, most of things I do are scripted but the steps remain same everytime. Even if you use Ansible, you have to atleast check the scripts and tune it according to your preference.</p>
+<h3 id="networking-on-tokyo-tower">Networking: ON 🗼</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> If you are using Ethernet/Wired connection</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ip</span></span><span class="z-meta z-function-call z-arguments z-shell"> link</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> If you are using wireless</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></code></pre>
+<h3 id="set-timedate-calendar">Set timedate 📆</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Set time and date</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">timedatectl</span></span><span class="z-meta z-function-call z-arguments z-shell"> set-ntp true</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">timedatectl</span></span><span class="z-meta z-function-call z-arguments z-shell"> set-timezone Europe/Dublin</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Check if date is correct</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">date</span></span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Write the correct date to CMOS RTC</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hwclock</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>w</span></span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Check if date and time is correct on RTC clock</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hwclock</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>r</span></span>
+</span></code></pre>
+<h3 id="partition-it-right">Partition it right 🗂️</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-variable z-other z-readwrite z-assignment z-shell">STOR_DEVICE</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">/dev/nvme0n1</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Set partition table to GPT</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">parted</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-expansion z-parameter z-begin z-shell">{</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-other z-readwrite z-shell">STOR_DEVICE</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-section z-expansion z-parameter z-end z-shell">}</span></span> mklabel gpt</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Creates first partition of size 512 MB as format type fat32</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">parted</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-expansion z-parameter z-begin z-shell">{</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-other z-readwrite z-shell">STOR_DEVICE</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-section z-expansion z-parameter z-end z-shell">}</span></span> mkpart ESP fat32 1MiB 513MiB</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Set bootable flag to ON for first partition</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">parted</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-expansion z-parameter z-begin z-shell">{</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-other z-readwrite z-shell">STOR_DEVICE</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-section z-expansion z-parameter z-end z-shell">}</span></span> set 1 boot on</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Creates second partition with name ArchLinux and format type as ext4, taking rest of space.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">parted</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-expansion z-parameter z-begin z-shell">{</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-variable z-other z-readwrite z-shell">STOR_DEVICE</span></span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-section z-expansion z-parameter z-end z-shell">}</span></span> mkpart “ArchLinux” ext4 513MiB 100<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span></span></span>
+</span></code></pre>
+<h3 id="luks-here">LUKS here</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> LUKS encrypting drive for security, I always choose the best encryption. (NOT RECOMMENDED FOR OLDER PCs)</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cryptsetup</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>type</span> luks2<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>cipher</span> aes-xts-plain64<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>hash</span> sha512<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>iter-time</span> 5000<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>key-size</span> 512<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>pbkdf</span> argon2i<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>use-random</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>verify-passphrase</span> luksFormat /dev/nvme0n1p2</span>
+
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Unlock the newly created encrypted partition (Shows up in /dev/mapper/whatever)</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cryptsetup</span></span><span class="z-meta z-function-call z-arguments z-shell"> luksOpen /dev/nvme0n1p2 whatever</span>
+</span></code></pre>
+<h3 id="logical-being">Logical Being</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> First: Create a physical volume</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pvcreate</span></span><span class="z-meta z-function-call z-arguments z-shell"> /dev/mapper/whatever</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Second: Creates a Volume Group of mentioned name</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">vgcreate</span></span><span class="z-meta z-function-call z-arguments z-shell"> arch /dev/mapper/whatever</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Third: Create a logical volume/partition on the previously created volume group</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">lvcreate</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>l</span> +100<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span><span class="z-variable z-other z-readwrite z-shell">FREE</span></span> arch<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>name</span> root</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> lvcreate --size 1G arch --name swap</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></code></pre>
+<h3 id="format-partitions-open-file-fo">Format Partitions 📁</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkfs.vfat</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>F32</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>n</span> LinuxEFI /dev/nvme0n1p1</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkfs.ext4</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>L</span> ArchLinuxRoot /dev/mapper/arch-root</span>
+</span></code></pre>
+<h3 id="mount-partitions-open-file-folder">Mount Partitions 📂</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mount</span></span><span class="z-meta z-function-call z-arguments z-shell"> /dev/mapper/arch-root /mnt</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> /mnt/efi</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mount</span></span><span class="z-meta z-function-call z-arguments z-shell"> /dev/nvme0n1p1 /mnt/efi</span>
+</span></code></pre>
+<h3 id="select-mirrors-for-download">Select Mirrors for download 🪞</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">reflector</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>verbose</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>latest</span> 10<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>sort</span> rate<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>save</span> /etc/pacman.d/mirrorlist</span>
+</span></code></pre>
+<h3 id="bare-minimum-things">Bare Minimum Things 🦺</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pacstrap</span></span><span class="z-meta z-function-call z-arguments z-shell"> /mnt base base-devel vim efibootmgr linux linux-firmware lvm2 mkinitcpio networkmanager amd-ucode git efitools wget python neovim zsh git sudo dialog wpa_supplicant tmux dhclient reflector nvme-cli</span>
+</span></code></pre>
+<h3 id="the-main-course-pot-of-food">The Main Course :pot_of_food:</h3>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Generate fstab and chroot into your new installation</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">genfstab</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>U</span> /mnt <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;&gt;</span> /mnt/etc/fstab</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">arch-chroot</span></span><span class="z-meta z-function-call z-arguments z-shell"> /mnt</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Generate Locale</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> LANG=en_US.UTF-8 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> /etc/locale.conf</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> en_US.UTF-8 UTF-8 <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;&gt;</span> /etc/locale.gen</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">locale-gen</span></span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">localectl</span></span><span class="z-meta z-function-call z-arguments z-shell"> set-locale LANG=en_US.UTF-8</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> LC_ALL= <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;&gt;</span> /etc/locale.conf</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Set the hostname</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> Awesome-PC <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> /etc/hostname</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Enable wheel group for sudoers</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>%root ALL=(ALL) ALL<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> /etc/sudoers</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>%wheel ALL=(ALL) ALL<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;&gt;</span> /etc/sudoers</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Add the primary user</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">groupadd</span></span><span class="z-meta z-function-call z-arguments z-shell"> diabloxenon</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">useradd</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>g</span> diabloxenon,wheel<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span> /bin/zsh diabloxenon</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">passwd</span></span><span class="z-meta z-function-call z-arguments z-shell"> diabloxenon</span>
+</span></code></pre>
+<p>Now we will add mkinitcpio file for generating initramfs. Open with vim /etc/mkinitcpio.conf</p>
+<p>All the files are added here for this website.</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> vim:set ft=sh</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> MODULES</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> The following modules are loaded before any boot hooks are</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> run.  Advanced users may wish to specify all system modules</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> in this array.  For instance:</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">     MODULES=(piix ide_disk reiserfs)</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-variable z-other z-readwrite z-assignment z-shell">MODULES</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span>ext4<span class="z-punctuation z-section z-parens z-end z-shell">)</span>
+
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> BINARIES</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> This setting includes any additional binaries a given user may</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> wish into the CPIO image.  This is run last, so it may be used to</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> override the actual binaries included by a given hook</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> BINARIES are dependency parsed, so you may safely ignore libraries</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-variable z-other z-readwrite z-assignment z-shell">BINARIES</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-punctuation z-section z-parens z-end z-shell">)</span>
+
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> FILES</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> This setting is similar to BINARIES above, however, files are added</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> as-is and are not parsed in any way.  This is useful for config files.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-variable z-other z-readwrite z-assignment z-shell">FILES</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-punctuation z-section z-parens z-end z-shell">)</span>
+
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> HOOKS</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> This is the most important setting in this file.  The HOOKS control the</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> modules and scripts added to the image, and what happens at boot time.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Order is important, and it is recommended that you do not change the</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> order in which HOOKS are added.  Run &#39;mkinitcpio -H &lt;hook name&gt;&#39; for</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> help on a given hook.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &#39;base&#39; is _required_ unless you know precisely what you are doing.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &#39;udev&#39; is _required_ in order to automatically load modules</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> &#39;filesystems&#39; is _required_ unless you specify your fs modules in MODULES</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Examples:</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   This setup specifies all modules in the MODULES setting above.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   No raid, lvm2, or encrypted root is needed.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">    HOOKS=(base)</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   This setup will autodetect all modules for your system and should</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   work as a sane default</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">    HOOKS=(base udev autodetect block filesystems)</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   This setup will generate a &#39;full&#39; image which supports most systems.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   No autodetection is done.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">    HOOKS=(base udev block filesystems)</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   This setup assembles a pata mdadm array with an encrypted root FS.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   Note: See &#39;mkinitcpio -H mdadm&#39; for more information on raid devices.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">    HOOKS=(base udev block mdadm encrypt filesystems)</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   This setup loads an lvm2 volume group on a usb device.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">    HOOKS=(base udev block lvm2 filesystems)</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">#   NOTE: If you have /usr on a separate partition, you MUST include the</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">    usr, fsck and shutdown hooks.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-variable z-other z-readwrite z-assignment z-shell">HOOKS</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span>base udev autodetect modconf block filesystems keyboard keymap lvm2 encrypt resume fsck<span class="z-punctuation z-section z-parens z-end z-shell">)</span>
+
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> COMPRESSION</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Use this to compress the initramfs image. By default, gzip compression</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> is used. Use &#39;cat&#39; to create an uncompressed image.</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-variable z-other z-readwrite z-assignment z-shell">COMPRESSION</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>cat<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span></span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">COMPRESSION=&quot;gzip&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">COMPRESSION=&quot;bzip2&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">COMPRESSION=&quot;lzma&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">COMPRESSION=&quot;xz&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">COMPRESSION=&quot;lzop&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">COMPRESSION=&quot;lz4&quot;</span><span class="z-comment z-line z-number-sign z-shell">
+</span>
+    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> COMPRESSION_OPTIONS</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Additional options for the compressor</span><span class="z-comment z-line z-number-sign z-shell">
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">COMPRESSION_OPTIONS=()</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></code></pre>
+<p>After editing the file, please run <code>mkinitcpio -p linux</code></p>
+<h3 id="dessert-icecream">Dessert 🍦</h3>
+<p>To add cherry on top, we will use yay AUR helper, for installing packages</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> /opt</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">git</span></span><span class="z-meta z-function-call z-arguments z-shell"> clone https://aur.archlinux.org/yay.git</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">chown</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>R</span> diabloxenon:users ./yay</span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> yay</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">su</span></span><span class="z-meta z-function-call z-arguments z-shell"> diabloxenon</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">makepkg</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>si</span></span>
+<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-exit z-shell">exit</span></span>
+</span></code></pre>
+<h3 id="generating-efi">Generating EFI 🧬</h3>
+<p>Create new file called <code>/boot/cmdline.txt</code> and enter the following</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-variable z-other z-readwrite z-assignment z-shell">cryptdevice</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">UUID=<span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span><span class="z-variable z-other z-readwrite z-shell">uuid</span></span><span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span></span>:lvm:allow-discards</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">root</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell">/dev/mapper/arch-root</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rw</span></span><span class="z-meta z-function-call z-arguments z-shell"> quiet</span>
+</span></code></pre>
+<p>after entering this, replace the line with <code>sed -i s/%uuid%/$(blkid -o value -s UUID /dev/nvme0n1p2)/ /boot/cmdline.txt</code></p>
+<p>Now the main part,</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> /boot</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> /efi/BOOT/ArchLinux</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">objcopy</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">    --</span>add-section</span> .osrel=/etc/os-release<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>change-section-vma</span> .osrel=0x20000 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">    --</span>add-section</span> .cmdline=<span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>cmdline.txt<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>change-section-vma</span> .cmdline=0x30000 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">    --</span>add-section</span> .linux=<span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>vmlinuz-linux<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>change-section-vma</span> .linux=0x40000 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">    --</span>add-section</span> .initrd=<span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>initramfs-linux.img<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>change-section-vma</span> .initrd=0x3000000 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    /usr/lib/systemd/boot/efi/linuxx64.efi.stub /efi/BOOT/ArchLinux/linux-signed.efi</span>
+</span></code></pre>
+<p>If you use lts versions of this</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-cd z-shell">cd</span></span><span class="z-meta z-function-call z-arguments z-shell"> /boot</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> /efi/BOOT/ArchLinuxLTS</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">objcopy</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">    --</span>add-section</span> .osrel=/etc/os-release<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>change-section-vma</span> .osrel=0x20000 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">    --</span>add-section</span> .cmdline=<span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>cmdline.txt<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>change-section-vma</span> .cmdline=0x30000 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">    --</span>add-section</span> .linux=<span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>vmlinuz-linux-lts<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>change-section-vma</span> .linux=0x40000 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">    --</span>add-section</span> .initrd=<span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&quot;</span>initramfs-linux-lts.img<span class="z-punctuation z-definition z-string z-end z-shell">&quot;</span></span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>change-section-vma</span> .initrd=0x3000000 <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    /usr/lib/systemd/boot/efi/linuxx64.efi.stub /efi/BOOT/ArchLinuxLTS/linux-lts-signed.efi</span>
+</span></code></pre>
+<p>Finally, copy the generated bootloader in your EFI directory <code>/efi/EFI/BOOT/</code></p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> /efi/EFI/BOOT</span>
+<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cp</span></span><span class="z-meta z-function-call z-arguments z-shell"> /efi/BOOT/ArchLinux/linux-signed.efi /efi/EFI/BOOT/BOOTX64.EFI</span>
+</span></code></pre>
+<h3 id="bare-minimum-things-thinking">Bare minimum things 🤔</h3>
+<p>Lastly, I am adding a list here to install things that can be the quintessential things for you noobies with big boobies :squinting_face_with_tongue:</p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">su</span></span><span class="z-meta z-function-call z-arguments z-shell"> diabloxenon</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">yay</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>S</span> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Disk usage analyzer</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">baobab</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Image previewer</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">eog</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Document viewer (PDF, DJVU etc.)</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">evince</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Archive manager</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">file-roller</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Desktop Login Manager</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gdm</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> IDE editor</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">code</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Privacy focused web browser</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brave-bin</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Great EPUB reader</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">foliate</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Scientific/Programming Calculator</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-calculator</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Character/Emoji viewer</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-characters</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Clock/Timer/Stopwatch</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-clocks</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Display color profile manager</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-color-manager</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> System/user installed fonts viewer</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-font-viewer</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Disk management software</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-disk-utility</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    gdisk <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Keyring for local credentials management</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-keyring</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Log viewer</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-logs</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Menubar stuff</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-menus</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Minimal music player</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-music</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Photo viewer/ Album manager</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-photos</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Snipping tool</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-screenshot</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Gnome Session manager</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-session</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Settings backend</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-settings-daemon</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> GUI shell for gnome</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-shell</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Extensions</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-shell-extensions</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Process viewer</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-system-monitor</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> GPGPU powered TTY based on Rust</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">alacritty</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Shell themes</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gnome-themes-extra</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    mutter <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> File manager</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">nautilus</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    nemo <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Wifi, Wired etc.</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">networkmanager</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> File previewer</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sushi</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    xdg-user-dirs-gtk <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Scanner frontend</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">simple-scan</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-punctuation z-separator z-continuation z-line z-shell">\
+</span>    <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Video player</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span>    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">vlc</span></span>
+
+    <span class="z-meta z-function-call z-shell"><span class="z-support z-function z-exit z-shell">exit</span></span>
+
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> enable gdm</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">systemctl</span></span><span class="z-meta z-function-call z-arguments z-shell"> enable NetworkManager</span>
+    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">reboot</span></span>
+</span></code></pre>
+<h3 id="final-touch-man-getting-haircut">Final Touch :man_getting_haircut:</h3>
+<p>If you have reached till the end then good job! You and I both know that your system is working now. If you want to add some additional pointers then you are welcome to do so! Just email me the things you need to mention along with your fauxname (twitter, github handle etc.) so I personally can shoutout to you for that.</p>
+
+    </div>
+</article>
+
+
+    
+<div class="footer">
+    <div class="buckt row">
+        <div class="copy col-4 col-sm-12">
+            echo (C) 2021&nbsp;<a href="https://nmnx.org" target="_blank"
+                rel="nofollow noreferrer">Naman
+                Bishnoi</a>&nbsp;| cat
+        </div>
+        <ul class="links col-8 col-sm-12">
+            <li><a href="mailto:me@nmnx.org" target="_blank" title="me@nmnx.org"
+                    rel="nofollow noreferrer">me@nmnx.org</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;about"
+                    title="about" rel="nofollow noreferrer">/about</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;donate"
+                    title="donate" rel="nofollow noreferrer">/donate</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;credits"
+                    title="credits" rel="nofollow noreferrer">/credits</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;privacy"
+                    title="privacy" rel="nofollow noreferrer">/privacy</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;pgp"
+                    title="pgp" rel="nofollow noreferrer">/pgp</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;#"
+                    title="top" rel="nofollow noreferrer">/top</a></li>
+            
+            <li>
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                    title="Creative Commons License" rel="nofollow noreferrer"><span class="icon">&#xe291;</span><span
+                        class="icon">&#xe290;</span><span class="icon">&#xe292;</span><span
+                        class="icon">&#xe297;</span></a>
+            </li>
+            <!-- "/ARFR6J0=" -->
+        </ul>
+    </div>
+</div>
+
+
+    <script type="text/javascript" src="/elasticlunr.min.js"></script>
+    <script type="text/javascript" src="/search_index.en.js"></script>
+    <script type="text/javascript" src="/search.js"></script>
+</body>
+
+</html>

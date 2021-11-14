@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>XLD&#x27;s Journal - Hacking</title>
+	<link href="https://nmnx.org/tags/hacking/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://nmnx.org"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-10-27T00:00:00+00:00</updated>
+	<id>https://nmnx.org/tags/hacking/atom.xml</id>
+	<entry xml:lang="en">
+		<title>interdimensional internet</title>
+		<published>2020-10-27T00:00:00+00:00</published>
+		<updated>2020-10-27T00:00:00+00:00</updated>
+		<link href="https://nmnx.org/journal/interdim-internet/" type="text/html"/>
+		<id>https://nmnx.org/journal/interdim-internet/</id>
+		<content type="html">&lt;p&gt;The web based challenges are back to make you cry and this time Rick and Morty are drunk af to remember anything that would help you. Read my method of how I solved the challenge and read only if you already have obtained the flag.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;The stuff here is encrypted, and as a hacker I don&#x27;t want you to be spoonfed of things that you wanna achieve. &lt;a href=&quot;&#x2F;dev&#x2F;flag-guides-decrypter&quot;&gt;here&lt;&#x2F;a&gt; is a short little program that I wrote to decrypt the CTF guides.&lt;&#x2F;p&gt;
+&lt;p&gt;The decryption key is the challenge flag and the message is as follows.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
