@@ -30,14 +30,14 @@
 <meta property="og:image" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="">
-<meta name="twitter:site" content="https://twitter.com/diabloxenon">
-<meta name="twitter:creator" content="@diabloxenon">
+<meta name="twitter:site" content="https://infosec.exchange/@diabloxenon">
+<meta name="twitter:creator" content="@@diabloxenon">
 
 
 
 
     <link rel="stylesheet" href="/xeno.css"
-        integrity="sha512-rbPgURpg09XHMN0PU3zlIMfP/QFaHaCDmic69B1db2wskkl7df32ogmFrlvF0z7rHWOZazq4UlfQrgo6qH+21w==">
+        integrity="sha512-nzhvHeb86uhIGE9Qcow7Bf7Dzbm67UkzBxz3qdrtElhKwuVft5wXxpmZzDeiVTcwwYcqIjmD8xULmxY9s49hSA==">
 </head>
 
 <body class="xeno">
@@ -89,9 +89,9 @@
                 </li>
                 
                 <li><a class=""
-                         href="https:&#x2F;&#x2F;twitter.com&#x2F;diabloxenon"
-                        title="&amp;#xf099;" target="_blank" rel="nofollow noreferrer"><span
-                            class="icon">&#xf099;</span></a>
+                         href="https:&#x2F;&#x2F;infosec.exchange&#x2F;@xld"
+                        title="&amp;#xf0ad1;" target="_blank" rel="nofollow noreferrer me"><span
+                            class="icon">&#xf0ad1;</span></a>
                 </li>
                 
             </ul>
@@ -151,7 +151,7 @@
         <ul>
             
             <li>
-                <a href="https://nmnx.org/journal/just-random-things/#1-check-if-your-system-is-generating-proper-entropy">1. Check if your system is generating proper entropy.</a>
+                <a href="https://nmnx.org/journal/just-random-things/#1-check-if-your-system-is-generating-proper-entropy">1. Check if your system is generating proper entropy</a>
                 
             </li>
             
@@ -171,7 +171,7 @@
 <span id="continue-reading"></span>
 <p>Like all things in this universe are random, your PC might annoy you for things like it can't find any random entropy and all. This is an error and it is random, like all things are (should have said something random)!</p>
 <p>In this journal entry, we will discuss what should you do when this kind of problem occurs.</p>
-<h4 id="1-check-if-your-system-is-generating-proper-entropy">1. Check if your system is generating proper entropy.</h4>
+<h4 id="1-check-if-your-system-is-generating-proper-entropy">1. Check if your system is generating proper entropy</h4>
 <p>To verify, we always see the entropy is in between of certain threshold values. For a healthy system, our entropy should around 4,096 which is the poolsize for your kernel. You can verify this by:</p>
 <pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">cat</span></span><span class="z-meta z-function-call z-arguments z-shell"> /proc/sys/kernel/random/poolsize</span>
 </span></code></pre>
@@ -183,19 +183,19 @@
 <p>Previously, we have already discussed this before in this <a href="/journal/wipe-disks#few-notes">journal entry</a> where we talked about how <code>/dev/random</code> is slower than <code>/dev/urandom</code>. This is because of less entropy collection done by <code>/dev/random</code> since it only collects from less frequent devices (Keyboard interrupts, Mouse motion, disk accesses) etc. Your system may partake in less generation of entropy due to this reason (in cases for servers and CLI based environments). However, there is considerablity for the solution of external (more faster) random number generation. Now now, you won't be needing any specialized hardware setup (although <a href="https://en.wikipedia.org/wiki/TRNG">these</a> things exists) for you to generate some random keys. Your processor manufacturer, already provides a TRNG hardware inside it.</p>
 <p>Programs like <a href="https://github.com/nhorman/rng-tools">rng-tools</a>, <a href="https://en.wikipedia.org/wiki/Yarrow_algorithm">Yarrow</a> (co-devised by <a href="https://en.wikipedia.org/wiki/Bruce_Schneier">Bruce Schneier</a>), <a href="https://en.wikipedia.org/wiki/Fortuna_(PRNG)">Fortuna</a> (successor of Yarrow, implemented in FreeBSD)</p>
 <p>Another good thing I would like to mention is, <em>rng-tools</em>, <em>Haveged</em>, <em>Frandom</em> are not suitable for long-term cryptographic keys as mentioned here in this <a href="https://wiki.archlinux.org/index.php/Random_number_generation#Alternatives">documentation</a>. The community have clearly explained this in their documentation, I am only making it brief.</p>
-<p>TRNGs are known in the industry to not generate numbers that random. See Schneier's article on </p>
+<p>TRNGs are known in the industry to not generate numbers that random. See Schneier's article on</p>
 <h4 id="3-dev-random-vs-dev-urandom-verdict">3. /dev/random vs /dev/urandom verdict</h4>
 <p>This <a href="https://www.ietf.org/rfc/rfc4086.txt">RFC4086</a> have also described it well on how the Linux kernel generates randomness for <code>/dev/random</code> by input data from various devices, along with their techniques.</p>
-<p>A proper seed generation is always a must to ensure that random bits generated are always different in long term. This is ensured by the kernel by using cryptographically secure PRNG. </p>
+<p>A proper seed generation is always a must to ensure that random bits generated are always different in long term. This is ensured by the kernel by using cryptographically secure PRNG.</p>
 <p>However, to quote from the RFC mentioned, I would like to mention this decade old argument on which one is safe. As mentioned on page 29 of this RFC:</p>
 <blockquote>
 <p>/dev/urandom works like /dev/random; however, it provides data even
-when the entropy estimate for the random pool drops to zero.  This
+when the entropy estimate for the random pool drops to zero. This
 may be adequate for session keys or for other key generation tasks
-for which blocking to await more random bits is not acceptable.  The
+for which blocking to await more random bits is not acceptable. The
 risk of continuing to take data even when the pool's entropy estimate
 is small in that past output may be computable from current output,
-provided that an attacker can reverse SHA-1.  Given that SHA-1 is
+provided that an attacker can reverse SHA-1. Given that SHA-1 is
 designed to be non-invertible, this is a reasonable risk.</p>
 </blockquote>
 <p>In simpler terms, <code>/dev/urandom</code> can be used to generate <strong>short term</strong> private keys (i.e. for sessions, token, otp, etc.) but <code>/dev/random</code> should be used in cases of <strong>keys that cannot be replaced often</strong>, like your (LUKS keyfile, SSH keys, GPG keys, etc.). But then again this is a sincere advice from my side, however should the opinions matters yet again, I would advice to refer to this point then.</p>
@@ -210,7 +210,7 @@ designed to be non-invertible, this is a reasonable risk.</p>
 <div class="footer">
     <div class="buckt row">
         <div class="copy col-4 col-sm-12">
-            echo (C) 2021&nbsp;<a href="https://nmnx.org" target="_blank"
+            echo (C) 2023&nbsp;<a href="https://nmnx.org" target="_blank"
                 rel="nofollow noreferrer">Naman
                 Bishnoi</a>&nbsp;| cat
         </div>

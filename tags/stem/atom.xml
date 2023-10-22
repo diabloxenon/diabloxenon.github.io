@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>XLD&#x27;s Journal - STEM</title>
-	<link href="https://nmnx.org/tags/stem/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://nmnx.org"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2014-01-14T19:20:10+05:30</updated>
-	<id>https://nmnx.org/tags/stem/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Coldlock Matrix 2.0</title>
-		<published>2014-01-14T19:20:10+05:30</published>
-		<updated>2014-01-14T19:20:10+05:30</updated>
-		<link href="https://nmnx.org/dev/coldlock/" type="text/html"/>
-		<id>https://nmnx.org/dev/coldlock/</id>
-		<content type="html">&lt;p&gt;Created this project to try out the application of thermoelectric cooling and Peltier effect.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
-	</entry>
+    <title>XLD&#x27;s Journal - STEM</title>
+    <link href="https://nmnx.org/tags/stem/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://nmnx.org"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2014-01-14T19:20:10+05:30</updated>
+    <id>https://nmnx.org/tags/stem/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Coldlock Matrix 2.0</title>
+        <published>2014-01-14T19:20:10+05:30</published>
+        <updated>2014-01-14T19:20:10+05:30</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://nmnx.org/dev/coldlock/" type="text/html"/>
+        <id>https://nmnx.org/dev/coldlock/</id>
+        
+        <summary type="html">&lt;p&gt;Created this project to try out the application of thermoelectric cooling and Peltier effect.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
 </feed>

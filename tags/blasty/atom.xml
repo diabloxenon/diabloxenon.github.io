@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>XLD&#x27;s Journal - Blasty</title>
-	<link href="https://nmnx.org/tags/blasty/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://nmnx.org"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2021-04-07T00:00:00+00:00</updated>
-	<id>https://nmnx.org/tags/blasty/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Blasty</title>
-		<published>2021-04-07T00:00:00+00:00</published>
-		<updated>2021-04-07T00:00:00+00:00</updated>
-		<link href="https://nmnx.org/dev/blasty/" type="text/html"/>
-		<id>https://nmnx.org/dev/blasty/</id>
-		<content type="html">&lt;p&gt;Coming soon with project MasterBlaster. Stay tuned 😉 Repository link &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;diabloxenon&#x2F;blasty&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;</content>
-	</entry>
+    <title>XLD&#x27;s Journal - Blasty</title>
+    <link href="https://nmnx.org/tags/blasty/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://nmnx.org"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-04-07T00:00:00+00:00</updated>
+    <id>https://nmnx.org/tags/blasty/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Blasty</title>
+        <published>2021-04-07T00:00:00+00:00</published>
+        <updated>2021-04-07T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://nmnx.org/dev/blasty/" type="text/html"/>
+        <id>https://nmnx.org/dev/blasty/</id>
+        
+        <summary type="html">&lt;p&gt;Coming soon with project MasterBlaster. Stay tuned 😉 Repository link &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;diabloxenon&#x2F;blasty&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
 </feed>

@@ -1,51 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>XLD&#x27;s Journal - Debate</title>
-	<link href="https://nmnx.org/tags/debate/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://nmnx.org"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-11-15T00:00:00+00:00</updated>
-	<id>https://nmnx.org/tags/debate/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Just random things</title>
-		<published>2020-11-15T00:00:00+00:00</published>
-		<updated>2020-11-15T00:00:00+00:00</updated>
-		<link href="https://nmnx.org/journal/just-random-things/" type="text/html"/>
-		<id>https://nmnx.org/journal/just-random-things/</id>
-		<content type="html">&lt;p&gt;Random things aren&#x27;t random at all. Sometimes, it might be difficult for your beloved PC to generate a proper entropy for things that needs to be random. We will explore the solution behind this peculiar problem.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;Like all things in this universe are random, your PC might annoy you for things like it can&#x27;t find any random entropy and all. This is an error and it is random, like all things are (should have said something random)!&lt;&#x2F;p&gt;
-&lt;p&gt;In this journal entry, we will discuss what should you do when this kind of problem occurs.&lt;&#x2F;p&gt;
-&lt;h4 id=&quot;1-check-if-your-system-is-generating-proper-entropy&quot;&gt;1. Check if your system is generating proper entropy.&lt;&#x2F;h4&gt;
-&lt;p&gt;To verify, we always see the entropy is in between of certain threshold values. For a healthy system, our entropy should around 4,096 which is the poolsize for your kernel. You can verify this by:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;cat&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &#x2F;proc&#x2F;sys&#x2F;kernel&#x2F;random&#x2F;poolsize&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;This will output the upper limit of your poolsize, before it is again dumped out and becomes zero. System can be said faulty, if its entropy falls below 250 even after long run. Therefore, a good region is &lt;strong&gt;1024 &amp;lt; entropy &amp;lt; 4096&lt;&#x2F;strong&gt;. For the values mentioned above, you can refer to the &lt;a href=&quot;&#x2F;journal&#x2F;experiments-rng&quot;&gt;this entry&lt;&#x2F;a&gt;. Check your system&#x27;s entropy with the following command:&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;cat&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &#x2F;proc&#x2F;sys&#x2F;kernel&#x2F;random&#x2F;entropy_avail&lt;&#x2F;span&gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;If your entropy is not in the region, then there below mentioned is the solution you should try with.&lt;&#x2F;p&gt;
-&lt;h4 id=&quot;2-pseudorandom-number-generator-prngs&quot;&gt;2. Pseudorandom number generator (PRNGs)&lt;&#x2F;h4&gt;
-&lt;p&gt;Previously, we have already discussed this before in this &lt;a href=&quot;&#x2F;journal&#x2F;wipe-disks#few-notes&quot;&gt;journal entry&lt;&#x2F;a&gt; where we talked about how &lt;code&gt;&#x2F;dev&#x2F;random&lt;&#x2F;code&gt; is slower than &lt;code&gt;&#x2F;dev&#x2F;urandom&lt;&#x2F;code&gt;. This is because of less entropy collection done by &lt;code&gt;&#x2F;dev&#x2F;random&lt;&#x2F;code&gt; since it only collects from less frequent devices (Keyboard interrupts, Mouse motion, disk accesses) etc. Your system may partake in less generation of entropy due to this reason (in cases for servers and CLI based environments). However, there is considerablity for the solution of external (more faster) random number generation. Now now, you won&#x27;t be needing any specialized hardware setup (although &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;TRNG&quot;&gt;these&lt;&#x2F;a&gt; things exists) for you to generate some random keys. Your processor manufacturer, already provides a TRNG hardware inside it.&lt;&#x2F;p&gt;
-&lt;p&gt;Programs like &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nhorman&#x2F;rng-tools&quot;&gt;rng-tools&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Yarrow_algorithm&quot;&gt;Yarrow&lt;&#x2F;a&gt; (co-devised by &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Bruce_Schneier&quot;&gt;Bruce Schneier&lt;&#x2F;a&gt;), &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fortuna_(PRNG)&quot;&gt;Fortuna&lt;&#x2F;a&gt; (successor of Yarrow, implemented in FreeBSD)&lt;&#x2F;p&gt;
-&lt;p&gt;Another good thing I would like to mention is, &lt;em&gt;rng-tools&lt;&#x2F;em&gt;, &lt;em&gt;Haveged&lt;&#x2F;em&gt;, &lt;em&gt;Frandom&lt;&#x2F;em&gt; are not suitable for long-term cryptographic keys as mentioned here in this &lt;a href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;index.php&#x2F;Random_number_generation#Alternatives&quot;&gt;documentation&lt;&#x2F;a&gt;. The community have clearly explained this in their documentation, I am only making it brief.&lt;&#x2F;p&gt;
-&lt;p&gt;TRNGs are known in the industry to not generate numbers that random. See Schneier&#x27;s article on &lt;&#x2F;p&gt;
-&lt;h4 id=&quot;3-dev-random-vs-dev-urandom-verdict&quot;&gt;3. &#x2F;dev&#x2F;random vs &#x2F;dev&#x2F;urandom verdict&lt;&#x2F;h4&gt;
-&lt;p&gt;This &lt;a href=&quot;https:&#x2F;&#x2F;www.ietf.org&#x2F;rfc&#x2F;rfc4086.txt&quot;&gt;RFC4086&lt;&#x2F;a&gt; have also described it well on how the Linux kernel generates randomness for &lt;code&gt;&#x2F;dev&#x2F;random&lt;&#x2F;code&gt; by input data from various devices, along with their techniques.&lt;&#x2F;p&gt;
-&lt;p&gt;A proper seed generation is always a must to ensure that random bits generated are always different in long term. This is ensured by the kernel by using cryptographically secure PRNG. &lt;&#x2F;p&gt;
-&lt;p&gt;However, to quote from the RFC mentioned, I would like to mention this decade old argument on which one is safe. As mentioned on page 29 of this RFC:&lt;&#x2F;p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&#x2F;dev&#x2F;urandom works like &#x2F;dev&#x2F;random; however, it provides data even
-when the entropy estimate for the random pool drops to zero.  This
-may be adequate for session keys or for other key generation tasks
-for which blocking to await more random bits is not acceptable.  The
-risk of continuing to take data even when the pool&#x27;s entropy estimate
-is small in that past output may be computable from current output,
-provided that an attacker can reverse SHA-1.  Given that SHA-1 is
-designed to be non-invertible, this is a reasonable risk.&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;p&gt;In simpler terms, &lt;code&gt;&#x2F;dev&#x2F;urandom&lt;&#x2F;code&gt; can be used to generate &lt;strong&gt;short term&lt;&#x2F;strong&gt; private keys (i.e. for sessions, token, otp, etc.) but &lt;code&gt;&#x2F;dev&#x2F;random&lt;&#x2F;code&gt; should be used in cases of &lt;strong&gt;keys that cannot be replaced often&lt;&#x2F;strong&gt;, like your (LUKS keyfile, SSH keys, GPG keys, etc.). But then again this is a sincere advice from my side, however should the opinions matters yet again, I would advice to refer to this point then.&lt;&#x2F;p&gt;
-&lt;p&gt;If you feel like something else should also have been mentioned in this entry, feel free to email me about.&lt;&#x2F;p&gt;
-&lt;p&gt;That&#x27;s all for today! Thank you for reading this journal. Let&#x27;s see you again next time.&lt;&#x2F;p&gt;
-</content>
-	</entry>
+    <title>XLD&#x27;s Journal - Debate</title>
+    <link href="https://nmnx.org/tags/debate/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://nmnx.org"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2020-11-15T00:00:00+00:00</updated>
+    <id>https://nmnx.org/tags/debate/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Just random things</title>
+        <published>2020-11-15T00:00:00+00:00</published>
+        <updated>2020-11-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://nmnx.org/journal/just-random-things/" type="text/html"/>
+        <id>https://nmnx.org/journal/just-random-things/</id>
+        
+        <summary type="html">&lt;p&gt;Random things aren&#x27;t random at all. Sometimes, it might be difficult for your beloved PC to generate a proper entropy for things that needs to be random. We will explore the solution behind this peculiar problem.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
 </feed>

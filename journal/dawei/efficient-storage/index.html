@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+
+<title>Performance&#x2F;Cost Ratio for Silicon Storage Media - diabloxenon | nmnx.org</title>
+<meta property="og:title" content="Performance&#x2F;Cost Ratio for Silicon Storage Media - diabloxenon | nmnx.org">
+<meta property="twitter:title" content="Performance&#x2F;Cost Ratio for Silicon Storage Media - diabloxenon | nmnx.org">
+
+
+<meta name="description" content="Disk performances between SSD, USB and SDcard. Typically done for raspberry pi and usb Linux.
+">
+<meta property="og:description" content="Disk performances between SSD, USB and SDcard. Typically done for raspberry pi and usb Linux.
+">
+<meta property="twitter:description" content="Disk performances between SSD, USB and SDcard. Typically done for raspberry pi and usb Linux.
+">
+
+
+<meta property="og:url" content="https://nmnx.org/journal/dawei/efficient-storage/">
+<meta property="og:locale" content="en-UK">
+<meta property="og:image" content="">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:image" content="">
+<meta name="twitter:site" content="https://infosec.exchange/@diabloxenon">
+<meta name="twitter:creator" content="@@diabloxenon">
+
+
+
+
+    <link rel="stylesheet" href="/xeno.css"
+        integrity="sha512-nzhvHeb86uhIGE9Qcow7Bf7Dzbm67UkzBxz3qdrtElhKwuVft5wXxpmZzDeiVTcwwYcqIjmD8xULmxY9s49hSA==">
+</head>
+
+<body class="xeno">
+    
+<div class="buckt">
+    <header class="navbar row">
+        <div class="col-6 col-sm-12 row">
+            <div class="col-3 col-sm-12"><a href="https:&#x2F;&#x2F;nmnx.org">diabloxenon</a>:~#</div>
+            <div class="col-9 col-sm-12 prompt">
+
+
+/<a href="/journal/" title="journal">journal</a>/<a href="/journal&#x2F;dawei/" title="dawei">dawei</a>/<a href="/journal&#x2F;dawei&#x2F;efficient-storage/" title="efficient-storage">efficient-storage</a>/<a href="/journal&#x2F;dawei&#x2F;efficient-storage&#x2F;/" title=""></a>
+
+</div>
+        </div>
+        <div class="col-1 col-sm-12"><input id="search" placeholder="&#xf002; search"></input></div>
+        <nav class="navlinks col-5 col-sm-12 row">
+            <ul class="group col-8 col-sm-12">
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;awards"
+                        title="awards" rel="nofollow noreferrer">/awards</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;journal"
+                        title="journal" rel="nofollow noreferrer">/journal</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;dev"
+                        title="dev" rel="nofollow noreferrer">/dev</a></li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;nmnx.org&#x2F;tags"
+                        title="tags" rel="nofollow noreferrer">/tags</a></li>
+                
+            </ul>
+            <ul class="social col-4 col-sm-12">
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;github.com&#x2F;diabloxenon"
+                        title="&amp;#xf09b;" target="_blank" rel="nofollow noreferrer"><span
+                            class="icon">&#xf09b;</span></a>
+                </li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;t.me&#x2F;diabloxenon"
+                        title="&amp;#xe217;" target="_blank" rel="nofollow noreferrer"><span
+                            class="icon">&#xe217;</span></a>
+                </li>
+                
+                <li><a class=""
+                         href="https:&#x2F;&#x2F;infosec.exchange&#x2F;@xld"
+                        title="&amp;#xf0ad1;" target="_blank" rel="nofollow noreferrer me"><span
+                            class="icon">&#xf0ad1;</span></a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+</div>
+
+
+    
+<div class="buckt">
+    <div class="search-results">
+        <h1>Search Results</h1>
+        <noscript>Enable Javascript to use the search feature of this journal.</noscript>
+        <ul class="search-results__items"></ul>
+        <hr />
+    </div>
+</div>
+
+
+    
+<article class="buckt">
+    <h1>Performance&#x2F;Cost Ratio for Silicon Storage Media</h1>
+    <div class="title row">
+        <div class="date col-6 col-sm-12">
+            <div class="pub">
+                <span class="icon">&#xfb4e;</span> Apr 07, 2022
+            </div>
+            
+            <div class="upd">
+                <span class="icon">&#xfbae;</span> May 03, 2022
+            </div>
+            
+        </div>
+        <div class="col-6 col-sm-12">
+            <div class="time">
+                <span class="icon">&#xfa1a;</span> 6 minutes
+            </div>
+            <ul class="tags">
+                
+                <br />
+                
+                <li><a href="https://nmnx.org/tags/linux/">
+                        <div class="tagid">Linux</div>
+                    </a></li>
+                
+                <li><a href="https://nmnx.org/tags/devops/">
+                        <div class="tagid">Devops</div>
+                    </a></li>
+                
+                <li><a href="https://nmnx.org/tags/da-wei/">
+                        <div class="tagid">Da Wei</div>
+                    </a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        
+        <h2 style="margin:0">Contents</h2>
+        <ul>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/efficient-storage/#tl-dr">TL;DR</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/efficient-storage/#introduction">Introduction</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/efficient-storage/#sd-card-benchmarks">SD Card Benchmarks</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/efficient-storage/#usb-drive-benchmarks">USB Drive Benchmarks</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://nmnx.org/journal/dawei/efficient-storage/#ssd-benchmarks">SSD Benchmarks</a>
+                
+            </li>
+            
+        </ul>
+        
+        <p>Disk performances between SSD, USB and SDcard. Typically done for raspberry pi and usb Linux.</p>
+<span id="continue-reading"></span><h2 id="tl-dr">TL;DR</h2>
+<p>Considering the overall cost/performance ratio, we recommend using <em>USB 3.1 based USB drives</em> to run the operating systems without breaking your wallet.</p>
+<h2 id="introduction">Introduction</h2>
+<p>What we are using for our benchmarking measurements is a tool called <code>fio</code>. Debian based platforms can install it using <code>apt install fio</code>. For other distros, you can find the prebuilt binaries on the official repo at <a href="https://github.com/axboe/fio">https://github.com/axboe/fio</a>.</p>
+<p>Also note that we are using few presets in advance to our little test, you can research more about why we are using that <a href="https://www.ibm.com/cloud/blog/using-fio-to-tell-whether-your-storage-is-fast-enough-for-etcd">here</a></p>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">fio</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>rw</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>write<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>ioengine</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>sync<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>fdatasync</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>1<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>directory</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>bench-tests<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>size</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>22m<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>bs</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>2300<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>name</span><span class="z-keyword z-operator z-assignment z-option z-shell">=</span>whatever</span>
+</span></code></pre>
+<h2 id="sd-card-benchmarks">SD Card Benchmarks</h2>
+<pre data-lang="txt" class="language-txt z-code"><code class="language-txt" data-lang="txt"><span class="z-text z-plain">test-sdcard: (g=0): rw=write, bs=(R) 2300B-2300B, (W) 2300B-2300B, (T) 2300B-2300B, ioengine=sync, iodepth=1
+fio-3.25
+Starting 1 process
+
+test-sdcard: (groupid=0, jobs=1): err= 0: pid=784: Tue May  3 15:24:58 2022
+  write: IOPS=633, BW=1422KiB/s (1456kB/s)(21.0MiB/15843msec); 0 zone resets
+    clat (usec): min=12, max=220209, avg=272.13, stdev=2233.24
+     lat (usec): min=12, max=220212, avg=272.86, stdev=2233.27
+    clat percentiles (usec):
+     |  1.00th=[   14],  5.00th=[   16], 10.00th=[   16], 20.00th=[   16],
+     | 30.00th=[   27], 40.00th=[   30], 50.00th=[  396], 60.00th=[  404],
+     | 70.00th=[  408], 80.00th=[  420], 90.00th=[  437], 95.00th=[  453],
+     | 99.00th=[  537], 99.50th=[  562], 99.90th=[  611], 99.95th=[ 1090],
+     | 99.99th=[26346]
+   bw (  KiB/s): min=    4, max= 1572, per=100.00%, avg=1426.65, stdev=318.43, samples=31
+   iops        : min=    2, max=  700, avg=635.42, stdev=141.78, samples=31
+  lat (usec)   : 20=24.80%, 50=18.94%, 100=0.09%, 500=54.25%, 750=1.86%
+  lat (msec)   : 2=0.02%, 4=0.01%, 50=0.02%, 250=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=758, max=411420, avg=1298.35, stdev=4484.25
+    sync percentiles (usec):
+     |  1.00th=[   783],  5.00th=[   799], 10.00th=[   799], 20.00th=[   807],
+     | 30.00th=[   832], 40.00th=[   840], 50.00th=[   865], 60.00th=[  1352],
+     | 70.00th=[  1385], 80.00th=[  1401], 90.00th=[  1483], 95.00th=[  1958],
+     | 99.00th=[  5276], 99.50th=[  5342], 99.90th=[ 11994], 99.95th=[ 12649],
+     | 99.99th=[130548]
+  cpu          : usr=1.19%, sys=8.02%, ctx=31377, majf=0, minf=32
+  IO depths    : 1=200.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, &gt;=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%
+     issued rwts: total=0,10029,0,0 short=10029,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=1422KiB/s (1456kB/s), 1422KiB/s-1422KiB/s (1456kB/s-1456kB/s), io=21.0MiB (23.1MB), run=15843-15843msec
+
+Disk stats (read/write):
+  mmcblk0: ios=5561/10120, merge=0/44, ticks=2264/70639, in_queue=72902, util=99.51%
+</span></code></pre>
+<h2 id="usb-drive-benchmarks">USB Drive Benchmarks</h2>
+<pre data-lang="txt" class="language-txt z-code"><code class="language-txt" data-lang="txt"><span class="z-text z-plain">test-usb: (g=0): rw=write, bs=(R) 2300B-2300B, (W) 2300B-2300B, (T) 2300B-2300B, ioengine=sync, iodepth=1
+fio-3.25
+Starting 1 process
+test-usb: Laying out IO file (1 file / 22MiB)
+
+test-usb: (groupid=0, jobs=1): err= 0: pid=758: Tue May  3 13:51:08 2022
+  write: IOPS=456, BW=1026KiB/s (1051kB/s)(21.0MiB/21952msec); 0 zone resets
+    clat (usec): min=6, max=11446, avg=34.31, stdev=134.58
+     lat (usec): min=7, max=11446, avg=34.97, stdev=134.59
+    clat percentiles (usec):
+     |  1.00th=[    8],  5.00th=[   15], 10.00th=[   15], 20.00th=[   17],
+     | 30.00th=[   24], 40.00th=[   31], 50.00th=[   33], 60.00th=[   35],
+     | 70.00th=[   36], 80.00th=[   41], 90.00th=[   50], 95.00th=[   55],
+     | 99.00th=[   60], 99.50th=[   67], 99.90th=[  143], 99.95th=[ 1926],
+     | 99.99th=[ 4686]
+   bw (  KiB/s): min=  718, max= 1154, per=100.00%, avg=1027.67, stdev=72.01, samples=43
+   iops        : min=  320, max=  514, avg=457.72, stdev=32.01, samples=43
+  lat (usec)   : 10=3.02%, 20=23.42%, 50=64.98%, 100=8.36%, 250=0.14%
+  lat (usec)   : 1000=0.01%
+  lat (msec)   : 2=0.03%, 4=0.02%, 10=0.01%, 20=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=853, max=10840, avg=2146.64, stdev=1136.83
+    sync percentiles (usec):
+     |  1.00th=[  873],  5.00th=[  889], 10.00th=[  938], 20.00th=[  963],
+     | 30.00th=[  971], 40.00th=[  996], 50.00th=[ 2704], 60.00th=[ 2966],
+     | 70.00th=[ 2999], 80.00th=[ 3032], 90.00th=[ 3097], 95.00th=[ 3130],
+     | 99.00th=[ 4817], 99.50th=[ 5211], 99.90th=[ 6783], 99.95th=[8225],
+     | 99.99th=[10552]
+  cpu          : usr=0.61%, sys=6.40%, ctx=21106, majf=0, minf=28
+  IO depths    : 1=200.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, &gt;=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%
+     issued rwts: total=0,10029,0,0 short=10029,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=1026KiB/s (1051kB/s), 1026KiB/s-1026KiB/s (1051kB/s-1051kB/s), io=21.0MiB (23.1MB), run=21952-21952msec
+
+Disk stats (read/write):
+  sda: ios=0/21489, merge=0/11280, ticks=0/19990, in_queue=19990, util=99.68%
+</span></code></pre>
+<h2 id="ssd-benchmarks">SSD Benchmarks</h2>
+<pre data-lang="txt" class="language-txt z-code"><code class="language-txt" data-lang="txt"><span class="z-text z-plain">test-ssd: (g=0): rw=write, bs=(R) 2300B-2300B, (W) 2300B-2300B, (T) 2300B-2300B, ioengine=sync, iodepth=1
+fio-3.25
+Starting 1 process
+
+test-ssd: (groupid=0, jobs=1): err= 0: pid=921: Tue May  3 13:45:06 2022
+  write: IOPS=1410, BW=3168KiB/s (3244kB/s)(21.0MiB/7111msec); 0 zone resets
+    clat (usec): min=6, max=612, avg=150.36, stdev=124.81
+     lat (usec): min=7, max=613, avg=150.77, stdev=124.81
+    clat percentiles (usec):
+     |  1.00th=[    7],  5.00th=[    8], 10.00th=[    8], 20.00th=[    8],
+     | 30.00th=[   13], 40.00th=[   15], 50.00th=[  235], 60.00th=[  245],
+     | 70.00th=[  251], 80.00th=[  265], 90.00th=[  285], 95.00th=[  293],
+     | 99.00th=[  306], 99.50th=[  314], 99.90th=[  334], 99.95th=[  343],
+     | 99.99th=[  433]
+   bw (  KiB/s): min= 2924, max= 3333, per=100.00%, avg=3173.50, stdev=153.29, samples=14
+   iops        : min= 1302, max= 1484, avg=1413.14, stdev=68.26, samples=14
+  lat (usec)   : 10=24.40%, 20=16.51%, 50=2.91%, 100=0.01%, 250=24.60%
+  lat (usec)   : 500=31.56%, 750=0.01%
+  fsync/fdatasync/sync_file_range:
+    sync (usec): min=454, max=8992, avg=553.49, stdev=161.68
+    sync percentiles (usec):
+     |  1.00th=[  469],  5.00th=[  494], 10.00th=[  494], 20.00th=[  498],
+     | 30.00th=[  498], 40.00th=[  502], 50.00th=[  510], 60.00th=[  529],
+     | 70.00th=[  562], 80.00th=[  578], 90.00th=[  635], 95.00th=[  832],
+     | 99.00th=[  906], 99.50th=[  930], 99.90th=[  947], 99.95th=[ 1057],
+     | 99.99th=[ 8848]
+  cpu          : usr=1.34%, sys=15.08%, ctx=41364, majf=0, minf=29
+  IO depths    : 1=200.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, &gt;=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, &gt;=64=0.0%
+     issued rwts: total=0,10029,0,0 short=10029,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+  WRITE: bw=3168KiB/s (3244kB/s), 3168KiB/s-3168KiB/s (3244kB/s-3244kB/s), io=21.0MiB (23.1MB), run=7111-7111msec
+
+Disk stats (read/write):
+  sda: ios=5455/19426, merge=0/2, ticks=1253/4964, in_queue=9749, util=98.68%
+</span></code></pre>
+
+    </div>
+</article>
+
+
+    
+<div class="footer">
+    <div class="buckt row">
+        <div class="copy col-4 col-sm-12">
+            echo (C) 2023&nbsp;<a href="https://nmnx.org" target="_blank"
+                rel="nofollow noreferrer">Naman
+                Bishnoi</a>&nbsp;| cat
+        </div>
+        <ul class="links col-8 col-sm-12">
+            <li><a href="mailto:me@nmnx.org" target="_blank" title="me@nmnx.org"
+                    rel="nofollow noreferrer">me@nmnx.org</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;about"
+                    title="about" rel="nofollow noreferrer">/about</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;donate"
+                    title="donate" rel="nofollow noreferrer">/donate</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;credits"
+                    title="credits" rel="nofollow noreferrer">/credits</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;privacy"
+                    title="privacy" rel="nofollow noreferrer">/privacy</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;pgp"
+                    title="pgp" rel="nofollow noreferrer">/pgp</a></li>
+            
+            <li><a class=""
+                     href="https:&#x2F;&#x2F;nmnx.org&#x2F;#"
+                    title="top" rel="nofollow noreferrer">/top</a></li>
+            
+            <li>
+                <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"
+                    title="Creative Commons License" rel="nofollow noreferrer"><span class="icon">&#xe291;</span><span
+                        class="icon">&#xe290;</span><span class="icon">&#xe292;</span><span
+                        class="icon">&#xe297;</span></a>
+            </li>
+            <!-- "/ARFR6J0=" -->
+        </ul>
+    </div>
+</div>
+
+
+    <script type="text/javascript" src="/elasticlunr.min.js"></script>
+    <script type="text/javascript" src="/search_index.en.js"></script>
+    <script type="text/javascript" src="/search.js"></script>
+</body>
+
+</html>

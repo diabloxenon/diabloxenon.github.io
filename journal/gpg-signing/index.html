@@ -18,13 +18,10 @@
 
 
 <meta name="description" content="This is the (Part 1) of All about GPG series. In this part, we will learn how to sign stuff with GNU Privacy Guard. After reading this guide, you will be able to digitally sign files and distribute your code with your assurance.
-
 ">
 <meta property="og:description" content="This is the (Part 1) of All about GPG series. In this part, we will learn how to sign stuff with GNU Privacy Guard. After reading this guide, you will be able to digitally sign files and distribute your code with your assurance.
-
 ">
 <meta property="twitter:description" content="This is the (Part 1) of All about GPG series. In this part, we will learn how to sign stuff with GNU Privacy Guard. After reading this guide, you will be able to digitally sign files and distribute your code with your assurance.
-
 ">
 
 
@@ -33,14 +30,14 @@
 <meta property="og:image" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:image" content="">
-<meta name="twitter:site" content="https://twitter.com/diabloxenon">
-<meta name="twitter:creator" content="@diabloxenon">
+<meta name="twitter:site" content="https://infosec.exchange/@diabloxenon">
+<meta name="twitter:creator" content="@@diabloxenon">
 
 
 
 
     <link rel="stylesheet" href="/xeno.css"
-        integrity="sha512-rbPgURpg09XHMN0PU3zlIMfP/QFaHaCDmic69B1db2wskkl7df32ogmFrlvF0z7rHWOZazq4UlfQrgo6qH+21w==">
+        integrity="sha512-nzhvHeb86uhIGE9Qcow7Bf7Dzbm67UkzBxz3qdrtElhKwuVft5wXxpmZzDeiVTcwwYcqIjmD8xULmxY9s49hSA==">
 </head>
 
 <body class="xeno">
@@ -92,9 +89,9 @@
                 </li>
                 
                 <li><a class=""
-                         href="https:&#x2F;&#x2F;twitter.com&#x2F;diabloxenon"
-                        title="&amp;#xf099;" target="_blank" rel="nofollow noreferrer"><span
-                            class="icon">&#xf099;</span></a>
+                         href="https:&#x2F;&#x2F;infosec.exchange&#x2F;@xld"
+                        title="&amp;#xf0ad1;" target="_blank" rel="nofollow noreferrer me"><span
+                            class="icon">&#xf0ad1;</span></a>
                 </li>
                 
             </ul>
@@ -176,8 +173,7 @@
             
         </ul>
         
-        <p>This is the (Part 1) of All about GPG series. In this part, we will learn how to sign stuff with GNU Privacy Guard. After reading this guide, you will be able to digitally sign files and distribute your code with your assurance.
-<br/></p>
+        <p>This is the (Part 1) of All about GPG series. In this part, we will learn how to sign stuff with GNU Privacy Guard. After reading this guide, you will be able to digitally sign files and distribute your code with your assurance.</p>
 <span id="continue-reading"></span><h2 id="case-1-signing">Case 1: Signing</h2>
 <p>Firstly, we will generate ourselves an ultimate signing key. Before this, you might want to refer to earlier <a href="/journal/all-about-gpg">part here</a>.</p>
 <pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Please</span></span><span class="z-meta z-function-call z-arguments z-shell"> select what kind of key you want:</span>
@@ -205,7 +201,7 @@
    <span class="z-punctuation z-definition z-compound z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">9</span></span><span class="z-punctuation z-definition z-compound z-end z-shell">)</span><span class="z-meta z-function-call z-arguments z-shell"> secp256k1</span>
 <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Your</span></span><span class="z-meta z-function-call z-arguments z-shell"> selection<span class="z-keyword z-operator z-regexp z-quantifier z-shell">?</span> 1</span>
 </span></code></pre>
-<p>For this scenario, unless you are an absolute expert which most of us don't, I recommend you to visit http://safecurves.cr.yp.to/ that will help you in explaining which elliptic curve is cryptographically more secure or not. By the time of writing this entry, Curve 25519 is more trustworthy than others, so we will select <em>Option 1</em>.</p>
+<p>For this scenario, unless you are an absolute expert which most of us don't, I recommend you to visit <a href="http://safecurves.cr.yp.to/">http://safecurves.cr.yp.to/</a> that will help you in explaining which elliptic curve is cryptographically more secure or not. By the time of writing this entry, Curve 25519 is more trustworthy than others, so we will select <em>Option 1</em>.</p>
 <pre data-lang="txt" class="language-txt z-code"><code class="language-txt" data-lang="txt"><span class="z-text z-plain">Please specify how long the key should be valid.
          0 = key does not expire
       &lt;n&gt;  = key expires in n days
@@ -227,17 +223,17 @@ Comment: Signing key for open source projects and R&amp;D purposes only.
 </span></code></pre>
 <p>This time you will be asked for your information (Name, Email and Comment) to generate the key with your corresponding email address.
 A comment corresponds to its purpose, so write why do you want to use this key.</p>
-<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Change</span></span><span class="z-meta z-function-call z-arguments z-shell"> (N</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ame,</span></span><span class="z-meta z-function-call z-arguments z-shell"> (C</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">omment,</span></span><span class="z-meta z-function-call z-arguments z-shell"> (E</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mail</span></span><span class="z-meta z-function-call z-arguments z-shell"> or (O</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">kay/</span></span><span class="z-meta z-function-call z-arguments z-shell">(Q</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">uit?</span></span><span class="z-meta z-function-call z-arguments z-shell"> </span>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Change</span></span><span class="z-meta z-function-call z-arguments z-shell"> (N</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ame,</span></span><span class="z-meta z-function-call z-arguments z-shell"> (C</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">omment,</span></span><span class="z-meta z-function-call z-arguments z-shell"> (E</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mail</span></span><span class="z-meta z-function-call z-arguments z-shell"> or (O</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">kay/</span></span><span class="z-meta z-function-call z-arguments z-shell">(Q</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">uit?</span></span>
 </span></code></pre>
 <p>For the final time, it will ask you for any changes (in case of typos). Choose <em>(O)kay</em> for proceeding further.</p>
-<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">┌──────────────────────────────────────────────────────┐</span></span><span class="z-meta z-function-call z-arguments z-shell">            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> Please enter the passphrase to                       │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> protect your new key                                 │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">                                                      │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> Passphrase: ________________________________________ │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">                                                      │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">       <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>OK<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>                              <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>Cancel<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>     │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">└──────────────────────────────────────────────────────┘</span></span><span class="z-meta z-function-call z-arguments z-shell">            </span>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">┌──────────────────────────────────────────────────────┐</span></span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> Please enter the passphrase to                       │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> protect your new key                                 │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">                                                      │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> Passphrase: ________________________________________ │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">                                                      │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">       <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>OK<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>                              <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>Cancel<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>     │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">└──────────────────────────────────────────────────────┘</span></span>
 </span></code></pre>
 <p>Your choosen pinentry interface will now ask for your new password. Enter the password to safeguard your keys and then press <em>tab</em> to <code>&lt;OK&gt;</code> and press <em>return</em>.</p>
 <pre data-lang="txt" class="language-txt z-code"><code class="language-txt" data-lang="txt"><span class="z-text z-plain">We need to generate a lot of random bytes. It is a good idea to perform
@@ -284,14 +280,14 @@ jKu3b7TD2PKi33jLrEBKug8=
 <pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">gpg</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>sign</span><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>default-key</span> code@nmnx.org thelegend27.pdf</span>
 </span></code></pre>
 <p>where <code>code@nmnx.org</code> is your email address mentioned earlier in generated signing key (if you have multiple keys in your system) whereas <code>thelegend27.pdf</code> is the file name (👀 don't tell anyone). Again this screen will appear before you, just enter your password:</p>
-<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">┌──────────────────────────────────────────────────────┐</span></span><span class="z-meta z-function-call z-arguments z-shell">            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> Please enter the passphrase to                       │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> protect your new key                                 │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">                                                      │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> Passphrase: ________________________________________ │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">                                                      │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">       <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>OK<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>                              <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>Cancel<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>     │            </span>
-            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">└──────────────────────────────────────────────────────┘</span></span><span class="z-meta z-function-call z-arguments z-shell">            </span>
+<pre data-lang="bash" class="language-bash z-code"><code class="language-bash" data-lang="bash"><span class="z-source z-shell z-bash">            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">┌──────────────────────────────────────────────────────┐</span></span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> Please enter the passphrase to                       │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> protect your new key                                 │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">                                                      │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell"> Passphrase: ________________________________________ │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">                                                      │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">│</span></span><span class="z-meta z-function-call z-arguments z-shell">       <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>OK<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>                              <span class="z-keyword z-operator z-assignment z-redirection z-shell">&lt;</span>Cancel<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>     │</span>
+            <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">└──────────────────────────────────────────────────────┘</span></span>
 </span></code></pre>
 <p>This will create a signed document ending with extension *.gpg in your working directory which can be verified and decrypted back to original document.</p>
 <h3 id="verifying-things">Verifying things</h3>
@@ -315,7 +311,7 @@ jKu3b7TD2PKi33jLrEBKug8=
 <div class="footer">
     <div class="buckt row">
         <div class="copy col-4 col-sm-12">
-            echo (C) 2021&nbsp;<a href="https://nmnx.org" target="_blank"
+            echo (C) 2023&nbsp;<a href="https://nmnx.org" target="_blank"
                 rel="nofollow noreferrer">Naman
                 Bishnoi</a>&nbsp;| cat
         </div>
